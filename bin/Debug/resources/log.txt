@@ -62,3 +62,4 @@ File name: 'c:\users\radar\documents\visual studio 2013\Projects\CentreControlCa
 06/10/2015 13:16:57-Res SMS = OK
 06/10/2015 13:16:57-AT+CMGL="REC UNREAD"OK
 06/10/2015 13:19:54-Obrint port
+06/10/2015 15:53:23-Obrint port

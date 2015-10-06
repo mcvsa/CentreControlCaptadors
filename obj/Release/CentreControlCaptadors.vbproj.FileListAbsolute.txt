@@ -1,0 +1,12 @@
+C:\Users\radar\Documents\Visual Studio 2013\Projects\CentreControlCaptadors\CentreControlCaptadors\bin\Release\CentreControlCaptadors.exe.config
+C:\Users\radar\Documents\Visual Studio 2013\Projects\CentreControlCaptadors\CentreControlCaptadors\bin\Release\CentreControlCaptadors.exe
+C:\Users\radar\Documents\Visual Studio 2013\Projects\CentreControlCaptadors\CentreControlCaptadors\bin\Release\CentreControlCaptadors.pdb
+C:\Users\radar\Documents\Visual Studio 2013\Projects\CentreControlCaptadors\CentreControlCaptadors\bin\Release\CentreControlCaptadors.xml
+C:\Users\radar\Documents\Visual Studio 2013\Projects\CentreControlCaptadors\CentreControlCaptadors\bin\Release\Newtonsoft.Json.dll
+C:\Users\radar\Documents\Visual Studio 2013\Projects\CentreControlCaptadors\CentreControlCaptadors\bin\Release\Newtonsoft.Json.xml
+C:\Users\radar\Documents\Visual Studio 2013\Projects\CentreControlCaptadors\CentreControlCaptadors\obj\Release\CentreControlCaptadors.CCC.resources
+C:\Users\radar\Documents\Visual Studio 2013\Projects\CentreControlCaptadors\CentreControlCaptadors\obj\Release\CentreControlCaptadors.Resources.resources
+C:\Users\radar\Documents\Visual Studio 2013\Projects\CentreControlCaptadors\CentreControlCaptadors\obj\Release\CentreControlCaptadors.vbproj.GenerateResource.Cache
+C:\Users\radar\Documents\Visual Studio 2013\Projects\CentreControlCaptadors\CentreControlCaptadors\obj\Release\CentreControlCaptadors.exe
+C:\Users\radar\Documents\Visual Studio 2013\Projects\CentreControlCaptadors\CentreControlCaptadors\obj\Release\CentreControlCaptadors.xml
+C:\Users\radar\Documents\Visual Studio 2013\Projects\CentreControlCaptadors\CentreControlCaptadors\obj\Release\CentreControlCaptadors.pdb

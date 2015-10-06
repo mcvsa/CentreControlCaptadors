@@ -10,4 +10,3 @@ c:\users\radar\documents\visual studio 2013\Projects\CentreControlCaptadors\Cent
 c:\users\radar\documents\visual studio 2013\Projects\CentreControlCaptadors\CentreControlCaptadors\obj\Debug\CentreControlCaptadors.xml
 c:\users\radar\documents\visual studio 2013\Projects\CentreControlCaptadors\CentreControlCaptadors\obj\Debug\CentreControlCaptadors.pdb
 c:\users\radar\documents\visual studio 2013\Projects\CentreControlCaptadors\CentreControlCaptadors\obj\Debug\CentreControlCaptadors.CCC.resources
-C:\Users\radar\Documents\Visual Studio 2013\Projects\CentreControlCaptadors\CentreControlCaptadors\obj\Debug\CentreControlCaptadors.vbprojResolveAssemblyReference.cache
