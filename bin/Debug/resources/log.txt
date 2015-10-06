@@ -1,0 +1,64 @@
+﻿06/10/2015 13:05:17-System.IO.FileNotFoundException: Could not find file 'c:\users\radar\documents\visual studio 2013\Projects\CentreControlCaptadors\CentreControlCaptadors\bin\Debug\resources\settings.json'.
+File name: 'c:\users\radar\documents\visual studio 2013\Projects\CentreControlCaptadors\CentreControlCaptadors\bin\Debug\resources\settings.json'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   at System.IO.File.ReadAllText(String path)
+   at Microsoft.VisualBasic.MyServices.FileSystemProxy.ReadAllText(String file)
+   at CentreControlCaptadors.JsonFile.updateJsonVar() in c:\users\radar\documents\visual studio 2013\Projects\CentreControlCaptadors\CentreControlCaptadors\CentreControlCaptadors.vb:line 1330
+06/10/2015 13:13:28-Comencem a enviar mail
+06/10/2015 13:13:28-Enviant mail a : satradar@mcvsa.com
+06/10/2015 13:13:58-Obrint port
+06/10/2015 13:14:08-Error receiving OK-The operation has timed out.
+06/10/2015 13:14:08-& Error: AT+CMGL
+06/10/2015 13:14:52-Obrint port
+06/10/2015 13:15:44-Obrint port
+06/10/2015 13:15:48-Enviant SMS al tlf: 686663429
+06/10/2015 13:15:48-Comencem a enviar SMS amb el text: Missatge de prova
+06/10/2015 13:15:48-Resposta = 
+06/10/2015 13:15:48-resposta modem = AT+CMGS="+34686663429"
+> 
+06/10/2015 13:16:12-Obrint port
+06/10/2015 13:16:15-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/06,13:13:40+08"  Correus  PST        06/10/15 05:59Filtro #04/08Filtro finaliz.+CMGL: 1,"REC UNREAD","+34686663429",,"15/10/06,13:13:54+08"  Correus  PST        06/10/15 05:59Filtro #04/08Filtro finaliz.OK
+06/10/2015 13:16:15-txt.Phone = 686663429
+06/10/2015 13:16:15-txt.Name = Correus  PST
+06/10/2015 13:16:15-txt.DataHora = 06/10/2015 5:59:00
+06/10/2015 13:16:15-Enviant SMS al tlf: 686663429
+06/10/2015 13:16:15-Comencem a enviar SMS amb el text:   Correus  PST        06/10/15 05:59Filtro #04/08Filtro finaliz.Data recep. missatge: 06/10/2015 13:16:15
+06/10/2015 13:16:15-Comencem a enviar mail
+06/10/2015 13:16:15-Enviant mail a : satradar@mcvsa.com
+06/10/2015 13:16:15-Resposta = 
+06/10/2015 13:16:15-resposta modem = AT+CMGS="+34686663429"
+> 
+06/10/2015 13:16:17-Res SMS = OK
+06/10/2015 13:16:17-AT+CMGL="REC UNREAD"OK
+06/10/2015 13:16:17-Response: Filtro finaliz.+CMGL: 1,"REC UNREAD","+34686663429",,"15/10/06,13:13:54+08"  Correus  PST        06/10/15 05:59Filtro #04/08Filtro finaliz.OKAT+CMGL="REC UNREAD"OK
+06/10/2015 13:16:17-txt.Phone = 686663429
+06/10/2015 13:16:17-txt.Name = Correus  PST
+06/10/2015 13:16:17-txt.DataHora = 06/10/2015 5:59:00
+06/10/2015 13:16:17-Enviant SMS al tlf: 686663429
+06/10/2015 13:16:17-Comencem a enviar SMS amb el text:   Correus  PST        06/10/15 05:59Filtro #04/08Filtro finaliz.Data recep. missatge: 06/10/2015 13:16:17
+06/10/2015 13:16:17-Resposta = 
+06/10/2015 13:16:17-Comencem a enviar mail
+06/10/2015 13:16:17-Enviant mail a : satradar@mcvsa.com
+06/10/2015 13:16:17-resposta modem = AT+CMGS="+34686663429"
+> 
+06/10/2015 13:16:19-Res SMS = OK
+06/10/2015 13:16:19-AT+CMGL="REC UNREAD"OK
+06/10/2015 13:16:19-Response: Filtro finaliz.OKAT+CMGL="REC UNREAD"OKAT+CMGL="REC UNREAD"OK
+06/10/2015 13:16:55-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/06,13:15:58+08" ZAL-2 PM10CAV-A/MSb  31/07/15 12:32Filtro #01/15Mensaje de testOK
+06/10/2015 13:16:55-txt.Phone = 686663429
+06/10/2015 13:16:55-txt.Name = ZAL-2 PM10CAV-A/MSb
+06/10/2015 13:16:55-txt.DataHora = 31/07/2015 12:32:00
+06/10/2015 13:16:55-Enviant SMS al tlf: 686663429
+06/10/2015 13:16:55-Comencem a enviar SMS amb el text:  ZAL-2 PM10CAV-A/MSb  31/07/15 12:32Filtro #01/15Mensaje de testData recep. missatge: 06/10/2015 13:16:55
+06/10/2015 13:16:55-Resposta = 
+06/10/2015 13:16:55-resposta modem = AT+CMGS="+34686663429"
+> 
+06/10/2015 13:16:55-Comencem a enviar mail
+06/10/2015 13:16:55-Enviant mail a : satradar@mcvsa.com
+06/10/2015 13:16:57-Res SMS = OK
+06/10/2015 13:16:57-AT+CMGL="REC UNREAD"OK
+06/10/2015 13:19:54-Obrint port
