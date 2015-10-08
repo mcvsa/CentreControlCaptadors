@@ -136,11 +136,11 @@ Partial Class CCC
         '
         Me.BtSave.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BtSave.Location = New System.Drawing.Point(131, 340)
+        Me.BtSave.Location = New System.Drawing.Point(114, 340)
         Me.BtSave.Name = "BtSave"
-        Me.BtSave.Size = New System.Drawing.Size(97, 30)
+        Me.BtSave.Size = New System.Drawing.Size(130, 30)
         Me.BtSave.TabIndex = 17
-        Me.BtSave.Text = "Desar historial..."
+        Me.BtSave.Text = "Exportar historial..."
         Me.BtSave.UseVisualStyleBackColor = True
         '
         'TBoxHistoric
