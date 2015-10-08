@@ -136,7 +136,7 @@ Partial Class CCC
         '
         Me.BtSave.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BtSave.Location = New System.Drawing.Point(114, 340)
+        Me.BtSave.Location = New System.Drawing.Point(314, 152)
         Me.BtSave.Name = "BtSave"
         Me.BtSave.Size = New System.Drawing.Size(130, 30)
         Me.BtSave.TabIndex = 17
@@ -149,12 +149,12 @@ Partial Class CCC
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TBoxHistoric.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.TBoxHistoric.Location = New System.Drawing.Point(431, 290)
+        Me.TBoxHistoric.Location = New System.Drawing.Point(6, 17)
         Me.TBoxHistoric.Multiline = True
         Me.TBoxHistoric.Name = "TBoxHistoric"
         Me.TBoxHistoric.ReadOnly = True
         Me.TBoxHistoric.ScrollBars = System.Windows.Forms.ScrollBars.Both
-        Me.TBoxHistoric.Size = New System.Drawing.Size(338, 315)
+        Me.TBoxHistoric.Size = New System.Drawing.Size(737, 129)
         Me.TBoxHistoric.TabIndex = 15
         '
         'GBoxSetup
@@ -257,11 +257,11 @@ Partial Class CCC
         Me.LVLastMessages.Location = New System.Drawing.Point(9, 17)
         Me.LVLastMessages.MultiSelect = False
         Me.LVLastMessages.Name = "LVLastMessages"
-        Me.LVLastMessages.Size = New System.Drawing.Size(388, 351)
+        Me.LVLastMessages.Size = New System.Drawing.Size(742, 156)
         Me.LVLastMessages.TabIndex = 23
         Me.LVLastMessages.TileSize = New System.Drawing.Size(345, 30)
         Me.LVLastMessages.UseCompatibleStateImageBehavior = False
-        Me.LVLastMessages.View = System.Windows.Forms.View.Tile
+        Me.LVLastMessages.View = System.Windows.Forms.View.List
         '
         'DataGridView
         '
@@ -288,9 +288,10 @@ Partial Class CCC
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GBoxTBoxHistoric.Controls.Add(Me.BtSave)
-        Me.GBoxTBoxHistoric.Location = New System.Drawing.Point(421, 271)
+        Me.GBoxTBoxHistoric.Controls.Add(Me.TBoxHistoric)
+        Me.GBoxTBoxHistoric.Location = New System.Drawing.Point(8, 457)
         Me.GBoxTBoxHistoric.Name = "GBoxTBoxHistoric"
-        Me.GBoxTBoxHistoric.Size = New System.Drawing.Size(358, 375)
+        Me.GBoxTBoxHistoric.Size = New System.Drawing.Size(757, 189)
         Me.GBoxTBoxHistoric.TabIndex = 27
         Me.GBoxTBoxHistoric.TabStop = False
         Me.GBoxTBoxHistoric.Text = "Historial del captador"
@@ -302,7 +303,7 @@ Partial Class CCC
         Me.GBoxLVLastMessages.Controls.Add(Me.LVLastMessages)
         Me.GBoxLVLastMessages.Location = New System.Drawing.Point(8, 271)
         Me.GBoxLVLastMessages.Name = "GBoxLVLastMessages"
-        Me.GBoxLVLastMessages.Size = New System.Drawing.Size(407, 375)
+        Me.GBoxLVLastMessages.Size = New System.Drawing.Size(757, 180)
         Me.GBoxLVLastMessages.TabIndex = 28
         Me.GBoxLVLastMessages.TabStop = False
         Me.GBoxLVLastMessages.Text = "Darrers missatges rebuts"
@@ -314,7 +315,6 @@ Partial Class CCC
         Me.ClientSize = New System.Drawing.Size(1104, 658)
         Me.Controls.Add(Me.DataGridView)
         Me.Controls.Add(Me.GBoxAdd)
-        Me.Controls.Add(Me.TBoxHistoric)
         Me.Controls.Add(Me.GBoxSetup)
         Me.Controls.Add(Me.GBoxConnect)
         Me.Controls.Add(Me.GBoxTBoxHistoric)
@@ -329,9 +329,9 @@ Partial Class CCC
         Me.GBoxConnect.ResumeLayout(False)
         CType(Me.DataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GBoxTBoxHistoric.ResumeLayout(False)
+        Me.GBoxTBoxHistoric.PerformLayout()
         Me.GBoxLVLastMessages.ResumeLayout(False)
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
     Friend WithEvents BtTelefon As System.Windows.Forms.Button
