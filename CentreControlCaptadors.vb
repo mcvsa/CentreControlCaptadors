@@ -251,28 +251,26 @@ Public Class CCC
                 Exit Sub
             End If
         Else
+            'Ordenem el vector
             vectorSMS = vectorSMS.OrderBy(Function(x) x.DataHora).ToList
             vectorSMS.Reverse()
             'Si el vector és massa gran, no voldrem presentar tants missatges per pantalla: eliminem el darrer element
             While vectorSMS.Count >= NUMMAXOFSMS
                 vectorSMS.RemoveAt(vectorSMS.Count - 1)
             End While
-
-            'Esborrem l'arxiu i el llistat
-            If My.Computer.FileSystem.FileExists(HISTORIC) Then
-                My.Computer.FileSystem.WriteAllText(HISTORIC, "", False)
-            Else
-                IOTextFiles.createFile(HISTORIC)
-            End If
+            'Esborrem els missatges
             LVLastMessages.Clear()
             'Tornem a omplir l'arxiu i el llistat amb els valors nous i ordenats
             Dim aux As SMSText
             Dim form As String
+            Dim allForms As String = ""
+
             For Each aux In vectorSMS
                 form = SMSText.Form(aux)
                 LVLastMessages.Items.Add(form)
-                My.Computer.FileSystem.WriteAllText(HISTORIC, SMSText.Form(aux) & Chr(13), True)
+                allForms = allForms & form & Chr(13)
             Next
+            IOTextFiles.writeFile(HISTORIC, allForms)
         End If
 
     End Sub
@@ -1270,7 +1268,7 @@ Public Class SMSText
 
     Public Phone As String
     Public Name As String
-    Public DataHora As String
+    Public DataHora As Date
     Public DataRx As String
     Public DataSent As String
     Public Filter As Integer

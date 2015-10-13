@@ -63,3 +63,175 @@ File name: 'c:\users\radar\documents\visual studio 2013\Projects\CentreControlCa
 06/10/2015 13:16:57-AT+CMGL="REC UNREAD"OK
 06/10/2015 13:19:54-Obrint port
 06/10/2015 15:53:23-Obrint port
+13/10/2015 14:47:37-Obrint port
+13/10/2015 14:47:46-Error receiving OK-The operation has timed out.
+13/10/2015 14:47:46-& Error: AT+CMGL
+13/10/2015 14:47:53-Obrint port
+13/10/2015 14:49:46-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/13,14:49:17+08"Best PM10             13/10/15 00:04Filtro #04/15Filtro finaliz.OK
+13/10/2015 14:49:46-txt.Phone = 686663429
+13/10/2015 14:49:46-txt.Name = Best PM10
+13/10/2015 14:49:46-txt.DataHora = 13/10/2015 0:04:00
+13/10/2015 14:49:46-Enviant SMS al tlf: 686663429
+13/10/2015 14:49:46-Comencem a enviar SMS amb el text: Best PM10             13/10/15 00:04Filtro #04/15Filtro finaliz.Data recep. missatge: 13/10/2015 14:49:46
+13/10/2015 14:49:46-Resposta = 
+13/10/2015 14:49:46-resposta modem = AT+CMGS="+34686663429"
+> 
+13/10/2015 14:49:46-Comencem a enviar mail
+13/10/2015 14:49:46-Enviant mail a : satradar@mcvsa.com
+13/10/2015 14:49:47-Res SMS = OK
+13/10/2015 14:49:48-AT+CMGL="REC UNREAD"OK
+13/10/2015 14:51:05-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/13,14:50:37+08"  Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.OK
+13/10/2015 14:51:05-txt.Phone = 686663429
+13/10/2015 14:51:05-txt.Name = Port Vell PM2.5
+13/10/2015 14:51:05-txt.DataHora = 13/10/2015 0:06:00
+13/10/2015 14:53:20-Enviant SMS al tlf: 686663429
+13/10/2015 14:53:20-Comencem a enviar SMS amb el text:   Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.Data recep. missatge: 13/10/2015 14:51:05
+13/10/2015 14:53:20-Resposta = 
+13/10/2015 14:53:20-Comencem a enviar mail
+13/10/2015 14:53:20-Enviant mail a : satradar@mcvsa.com
+13/10/2015 14:53:20-resposta modem = AT+CMGS="+34686663429"
+> 
+13/10/2015 14:53:21-Res SMS = OK
+13/10/2015 14:53:21-AT+CMGL="REC UNREAD"OK
+13/10/2015 14:53:58-Obrint port
+13/10/2015 14:54:31-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/13,14:54:05+08"  Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.OK
+13/10/2015 14:54:31-txt.Phone = 686663429
+13/10/2015 14:54:31-txt.Name = Port Vell PM2.5
+13/10/2015 14:54:31-txt.DataHora = 13/10/2015 0:06:00
+13/10/2015 14:54:35-Enviant SMS al tlf: 686663429
+13/10/2015 14:54:35-Comencem a enviar SMS amb el text:   Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.Data recep. missatge: 13/10/2015 14:54:31
+13/10/2015 14:54:35-Resposta = 
+13/10/2015 14:54:35-Comencem a enviar mail
+13/10/2015 14:54:35-resposta modem = AT+CMGS="+34686663429"
+> 
+13/10/2015 14:54:35-Enviant mail a : satradar@mcvsa.com
+13/10/2015 14:54:37-Res SMS = OK
+13/10/2015 14:54:37-AT+CMGL="REC UNREAD"OK
+13/10/2015 14:55:39-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/13,14:55:12+08"  Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.OK
+13/10/2015 14:55:39-txt.Phone = 686663429
+13/10/2015 14:55:39-txt.Name = Port Vell PM2.5
+13/10/2015 14:55:39-txt.DataHora = 13/10/2015 0:06:00
+13/10/2015 14:57:51-Enviant SMS al tlf: 686663429
+13/10/2015 14:57:51-Comencem a enviar SMS amb el text:   Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.Data recep. missatge: 13/10/2015 14:55:39
+13/10/2015 14:57:51-Resposta = 
+13/10/2015 14:57:51-Comencem a enviar mail
+13/10/2015 14:57:51-Enviant mail a : satradar@mcvsa.com
+13/10/2015 14:57:51-resposta modem = AT+CMGS="+34686663429"
+> 
+13/10/2015 14:57:53-Res SMS = OK
+13/10/2015 14:57:53-AT+CMGL="REC UNREAD"OK
+13/10/2015 14:58:48-Obrint port
+13/10/2015 14:59:05-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/13,14:58:38+08"  Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.OK
+13/10/2015 14:59:05-txt.Phone = 686663429
+13/10/2015 14:59:05-txt.Name = Port Vell PM2.5
+13/10/2015 14:59:05-txt.DataHora = 13/10/2015 0:06:00
+13/10/2015 15:01:05-Enviant SMS al tlf: 686663429
+13/10/2015 15:01:05-Comencem a enviar SMS amb el text:   Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.Data recep. missatge: 13/10/2015 14:59:05
+13/10/2015 15:01:05-Resposta = 
+13/10/2015 15:01:05-resposta modem = AT+CMGS="+34686663429"
+> 
+13/10/2015 15:01:05-Comencem a enviar mail
+13/10/2015 15:01:05-Enviant mail a : satradar@mcvsa.com
+13/10/2015 15:01:07-Res SMS = OK
+13/10/2015 15:01:07-AT+CMGL="REC UNREAD"OK
+13/10/2015 15:02:19-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/13,15:01:53+08"  Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.OK
+13/10/2015 15:02:19-txt.Phone = 686663429
+13/10/2015 15:02:19-txt.Name = Port Vell PM2.5
+13/10/2015 15:02:19-txt.DataHora = 13/10/2015 0:06:00
+13/10/2015 15:05:24-Comencem a enviar mail
+13/10/2015 15:05:24-Enviant mail a : satradar@mcvsa.com
+13/10/2015 15:05:31-Response: AT+CMGL="ALL"+CMGL: 1,"REC UNREAD","+34686663429",,"15/10/13,15:04:38+08"  Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.OK
+13/10/2015 15:05:31-txt.Phone = 686663429
+13/10/2015 15:05:31-txt.Name = Port Vell PM2.5
+13/10/2015 15:05:31-txt.DataHora = 13/10/2015 0:06:00
+13/10/2015 15:10:09-Obrint port
+13/10/2015 15:10:11-Response: AT+CMGL="ALL"+CMGL: 1,"REC READ","+34686663429",,"15/10/13,15:04:38+08"  Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.OK
+13/10/2015 15:10:11-txt.Phone = 686663429
+13/10/2015 15:10:11-txt.Name = Port Vell PM2.5
+13/10/2015 15:10:11-txt.DataHora = 13/10/2015 0:06:00
+13/10/2015 15:18:06-Obrint port
+13/10/2015 15:18:08-Response: AT+CMGL="ALL"+CMGL: 1,"REC READ","+34686663429",,"15/10/13,15:04:38+08"  Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.OK
+13/10/2015 15:18:08-txt.Phone = 686663429
+13/10/2015 15:18:08-txt.Name = Port Vell PM2.5
+13/10/2015 15:18:08-txt.DataHora = 13/10/2015 0:06:00
+13/10/2015 15:18:45-Obrint port
+13/10/2015 15:18:46-Response: AT+CMGL="ALL"+CMGL: 1,"REC READ","+34686663429",,"15/10/13,15:04:38+08"  Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.OK
+13/10/2015 15:18:46-txt.Phone = 686663429
+13/10/2015 15:18:46-txt.Name = Port Vell PM2.5
+13/10/2015 15:18:46-txt.DataHora = 13/10/2015 0:06:00
+13/10/2015 15:20:45-Obrint port
+13/10/2015 15:20:47-Response: AT+CMGL="ALL"+CMGL: 1,"REC READ","+34686663429",,"15/10/13,15:04:38+08"  Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.OK
+13/10/2015 15:20:47-txt.Phone = 686663429
+13/10/2015 15:20:47-txt.Name = Port Vell PM2.5
+13/10/2015 15:20:47-txt.DataHora = 13/10/2015 0:06:00
+13/10/2015 15:43:29-Obrint port
+13/10/2015 15:43:31-Response: AT+CMGL="ALL"+CMGL: 1,"REC READ","+34686663429",,"15/10/13,15:04:38+08"  Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.OK
+13/10/2015 15:43:31-txt.Phone = 686663429
+13/10/2015 15:43:31-txt.Name = Port Vell PM2.5
+13/10/2015 15:43:31-txt.DataHora = 13/10/2015 0:06:00
+13/10/2015 15:47:07-Obrint port
+13/10/2015 15:47:08-Response: AT+CMGL="ALL"+CMGL: 1,"REC READ","+34686663429",,"15/10/13,15:04:38+08"  Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.OK
+13/10/2015 15:47:08-txt.Phone = 686663429
+13/10/2015 15:47:08-txt.Name = Port Vell PM2.5
+13/10/2015 15:47:08-txt.DataHora = 13/10/2015 0:06:00
+13/10/2015 15:47:18-Comencem a enviar mail
+13/10/2015 15:47:18-Enviant mail a : satradar@mcvsa.com
+13/10/2015 15:47:33-Error mail: Failure sending mail.-Missatge:   Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.Data recep. missatge: 13/10/2015 15:47:08-Receptors: satradar@mcvsa.com
+13/10/2015 15:47:55-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/13,15:47:30+08" ZAL-2 PM10CAV-A/MSb  31/07/15 12:32Filtro #01/15Mensaje de testOK
+13/10/2015 15:47:55-txt.Phone = 686663429
+13/10/2015 15:47:55-txt.Name = ZAL-2 PM10CAV-A/MSb
+13/10/2015 15:47:55-txt.DataHora = 31/07/2015 12:32:00
+13/10/2015 15:48:52-Obrint port
+13/10/2015 15:48:54-Response: AT+CMGL="ALL"+CMGL: 0,"REC READ","+34686663429",,"15/10/13,15:47:30+08" ZAL-2 PM10CAV-A/MSb  31/07/15 12:32Filtro #01/15Mensaje de testOK
+13/10/2015 15:48:54-txt.Phone = 686663429
+13/10/2015 15:48:54-txt.Name = ZAL-2 PM10CAV-A/MSb
+13/10/2015 15:48:54-txt.DataHora = 31/07/2015 12:32:00
+13/10/2015 15:50:11-Comencem a enviar mail
+13/10/2015 15:50:11-Enviant mail a : satradar@mcvsa.com
+13/10/2015 16:02:21-Obrint port
+13/10/2015 16:02:58-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/13,16:02:30+08" ZAL-2 PM10CAV-A/MSb  31/07/15 12:32Filtro #01/15Mensaje de testOK
+13/10/2015 16:02:58-txt.Phone = 686663429
+13/10/2015 16:02:58-txt.Name = ZAL-2 PM10CAV-A/MSb
+13/10/2015 16:02:58-txt.DataHora = 31/07/2015 12:32:00
+13/10/2015 16:06:24-Obrint port
+13/10/2015 16:06:25-Response: AT+CMGL="ALL"+CMGL: 0,"REC READ","+34686663429",,"15/10/13,16:02:30+08" ZAL-2 PM10CAV-A/MSb  31/07/15 12:32Filtro #01/15Mensaje de testOK
+13/10/2015 16:06:25-txt.Phone = 686663429
+13/10/2015 16:06:25-txt.Name = ZAL-2 PM10CAV-A/MSb
+13/10/2015 16:06:25-txt.DataHora = 31/07/2015 12:32:00
+13/10/2015 16:06:36-Comencem a enviar mail
+13/10/2015 16:06:36-Enviant mail a : satradar@mcvsa.com
+13/10/2015 16:07:12-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/13,16:06:43+08"  Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.OK
+13/10/2015 16:07:12-txt.Phone = 686663429
+13/10/2015 16:07:12-txt.Name = Port Vell PM2.5
+13/10/2015 16:07:12-txt.DataHora = 13/10/2015 0:06:00
+13/10/2015 16:07:14-Comencem a enviar mail
+13/10/2015 16:07:14-Enviant mail a : satradar@mcvsa.com
+13/10/2015 16:07:43-Obrint port
+13/10/2015 16:08:11-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/13,16:07:44+08"  Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.OK
+13/10/2015 16:08:11-txt.Phone = 686663429
+13/10/2015 16:08:11-txt.Name = Port Vell PM2.5
+13/10/2015 16:08:11-txt.DataHora = 13/10/2015 0:06:00
+13/10/2015 16:08:40-Obrint port
+13/10/2015 16:08:41-Response: AT+CMGL="ALL"+CMGL: 0,"REC READ","+34686663429",,"15/10/13,16:07:44+08"  Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.OK
+13/10/2015 16:08:41-txt.Phone = 686663429
+13/10/2015 16:08:41-txt.Name = Port Vell PM2.5
+13/10/2015 16:08:41-txt.DataHora = 13/10/2015 0:06:00
+13/10/2015 16:10:40-Obrint port
+13/10/2015 16:10:41-Response: AT+CMGL="ALL"+CMGL: 0,"REC READ","+34686663429",,"15/10/13,16:07:44+08"  Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.OK
+13/10/2015 16:10:41-txt.Phone = 686663429
+13/10/2015 16:10:41-txt.Name = Port Vell PM2.5
+13/10/2015 16:10:41-txt.DataHora = 13/10/2015 0:06:00
+13/10/2015 16:11:17-Comencem a enviar mail
+13/10/2015 16:11:17-Enviant mail a : satradar@mcvsa.com
+13/10/2015 16:12:19-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/13,16:11:52+08"  Port Vell PM2.5     1/6/2015 00:06Filtro #04/15Filtro finaliz.OK
+13/10/2015 16:12:19-txt.Phone = 686663429
+13/10/2015 16:12:19-txt.Name = Port Vell PM2.5
+13/10/2015 16:12:19-txt.DataHora = 01/06/2015 0:06:00
+13/10/2015 16:12:36-Comencem a enviar mail
+13/10/2015 16:12:36-Enviant mail a : satradar@mcvsa.com
+13/10/2015 16:13:23-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/13,16:12:55+08"  Port Vell PM2.5     01/06/2015 00:06Filtro #04/15Filtro finaliz.OK
+13/10/2015 16:13:23-txt.Phone = 686663429
+13/10/2015 16:13:23-txt.Name = Port Vell PM2.5
+13/10/2015 16:13:23-txt.DataHora = 01/06/2015 0:06:00
+13/10/2015 16:13:42-Comencem a enviar mail
+13/10/2015 16:13:42-Enviant mail a : satradar@mcvsa.com
