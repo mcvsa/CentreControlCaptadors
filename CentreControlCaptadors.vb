@@ -353,18 +353,27 @@ Public Class CCC
             End If
         Else
             If Not tancant Then
-                Dim filereader As String
-
-                filereader = ""
+                Dim lines As New List(Of String)
                 TBoxHistoric.Text = ""
 
                 If nomCaptador <> Nothing Then
                     If My.Computer.FileSystem.FileExists(PATH_REGISTRES + nomCaptador) Then
-                        filereader = My.Computer.FileSystem.ReadAllText(PATH_REGISTRES + nomCaptador)
-                        TBoxHistoric.Text = filereader
-
-                        'Else
-                        '   MsgBox("No s'ha trobat l'arxiu de dades associades a aquest captador", vbOKOnly)
+                        Dim str As System.IO.StreamReader
+                        str = My.Computer.FileSystem.OpenTextFileReader(PATH_REGISTRES + nomCaptador)
+                        While Not str.EndOfStream
+                            Dim line = str.ReadLine
+                            If line <> "" Then
+                                lines.Add(line)
+                            End If
+                        End While
+                        str.Close()
+                        lines.Reverse()
+                        Dim i As Integer
+                        i = 0
+                        While i < lines.Count
+                            TBoxHistoric.AppendText(lines(i) + vbCrLf)
+                            i += 1
+                        End While
                     End If
                 End If
             End If

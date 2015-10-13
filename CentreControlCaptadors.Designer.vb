@@ -154,7 +154,7 @@ Partial Class CCC
         Me.TBoxHistoric.Name = "TBoxHistoric"
         Me.TBoxHistoric.ReadOnly = True
         Me.TBoxHistoric.ScrollBars = System.Windows.Forms.ScrollBars.Both
-        Me.TBoxHistoric.Size = New System.Drawing.Size(737, 129)
+        Me.TBoxHistoric.Size = New System.Drawing.Size(745, 129)
         Me.TBoxHistoric.TabIndex = 15
         '
         'GBoxSetup
@@ -254,10 +254,10 @@ Partial Class CCC
             Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.LVLastMessages.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LVLastMessages.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None
-        Me.LVLastMessages.Location = New System.Drawing.Point(9, 17)
+        Me.LVLastMessages.Location = New System.Drawing.Point(6, 17)
         Me.LVLastMessages.MultiSelect = False
         Me.LVLastMessages.Name = "LVLastMessages"
-        Me.LVLastMessages.Size = New System.Drawing.Size(742, 156)
+        Me.LVLastMessages.Size = New System.Drawing.Size(745, 156)
         Me.LVLastMessages.TabIndex = 23
         Me.LVLastMessages.TileSize = New System.Drawing.Size(345, 30)
         Me.LVLastMessages.UseCompatibleStateImageBehavior = False
