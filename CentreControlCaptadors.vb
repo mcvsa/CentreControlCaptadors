@@ -357,6 +357,7 @@ Public Class CCC
         Else
             If Not tancant Then
                 Dim lines As New List(Of String)
+
                 TBoxHistoric.Text = ""
 
                 If nomCaptador <> Nothing Then
@@ -377,6 +378,8 @@ Public Class CCC
                             TBoxHistoric.AppendText(lines(i) + vbCrLf)
                             i += 1
                         End While
+                        TBoxHistoric.SelectionStart = 0
+                        TBoxHistoric.ScrollToCaret()
                     End If
                 End If
             End If
