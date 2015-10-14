@@ -235,3 +235,41 @@ File name: 'c:\users\radar\documents\visual studio 2013\Projects\CentreControlCa
 13/10/2015 16:13:23-txt.DataHora = 01/06/2015 0:06:00
 13/10/2015 16:13:42-Comencem a enviar mail
 13/10/2015 16:13:42-Enviant mail a : satradar@mcvsa.com
+13/10/2015 16:19:20-Obrint port
+13/10/2015 16:20:02-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/13,16:19:35+08"  Port Vell PM2.5     9/10/2015 00:06Filtro #04/15Filtro finaliz.OK
+13/10/2015 16:20:02-txt.Phone = 686663429
+13/10/2015 16:20:02-txt.Name = Port Vell PM2.5
+13/10/2015 16:20:27-txt.DataHora = 09/10/2015 0:06:00
+13/10/2015 16:21:54-Comencem a enviar mail
+13/10/2015 16:21:54-Enviant mail a : satradar@mcvsa.com
+13/10/2015 16:26:34-Obrint port
+13/10/2015 16:26:56-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/13,16:26:30+08"  Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.OK
+13/10/2015 16:26:56-txt.Phone = 686663429
+13/10/2015 16:26:56-txt.Name = Port Vell PM2.5
+13/10/2015 16:27:07-txt.DataHora = 13/10/2015 0:06:00
+13/10/2015 16:27:24-Comencem a enviar mail
+13/10/2015 16:27:24-Enviant mail a : satradar@mcvsa.com
+13/10/2015 16:35:09-Obrint port
+13/10/2015 16:36:11-Obrint port
+13/10/2015 16:38:38-Obrint port
+13/10/2015 16:44:53-Obrint port
+13/10/2015 16:45:36-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/13,16:45:09+08"  Port Vell PM2.5     13/10/14 00:06Filtro #05/34Filtro finaliz.OK
+13/10/2015 16:45:36-txt.Phone = 686663429
+13/10/2015 16:45:36-txt.Name = Port Vell PM2.5
+13/10/2015 16:45:36-txt.DataHora = 13/10/2014 0:06:00
+13/10/2015 16:45:36-Comencem a enviar mail
+13/10/2015 16:45:36-Enviant mail a : satradar@mcvsa.com
+13/10/2015 16:55:37-Obrint port
+13/10/2015 16:57:05-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/13,16:56:37+08"   Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.OK
+13/10/2015 16:57:05-txt.Phone = 686663429
+13/10/2015 16:57:05-txt.Name = Port Vell PM2.5
+13/10/2015 16:57:05-txt.DataHora = 13/10/2015 0:06:00
+13/10/2015 16:57:05-Comencem a enviar mail
+13/10/2015 16:57:05-Enviant mail a : satradar@mcvsa.com
+13/10/2015 16:57:45-Obrint port
+13/10/2015 16:58:02-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/13,16:57:38+08"  Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.OK
+13/10/2015 16:58:02-txt.Phone = 686663429
+13/10/2015 16:58:02-txt.Name = Port Vell PM2.5
+13/10/2015 16:58:02-txt.DataHora = 13/10/2015 0:06:00
+13/10/2015 16:58:02-Comencem a enviar mail
+13/10/2015 16:58:02-Enviant mail a : satradar@mcvsa.com

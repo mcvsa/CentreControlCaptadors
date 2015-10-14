@@ -24,7 +24,7 @@ Public Class CCC
     Const TIME4SPACE As Integer = 5000 'Cada quant de temps mirem l'espai disponible de disc.
     Const LOWHDD As Long = 314572800 '300 Megues: avís de poc espai al disc dur.
     Const NUMMAXOFSMS As Integer = 10 'Número màxim de missatges al panell de darrers avisos.
-    Const NUM_COLS As Integer = 7 'Número de columnes del DataGridView.
+    Const NUM_COLS As Integer = 8 'Número de columnes del DataGridView.
     Const TIME2SMS As Integer = 5000 'Temps d'espera per a donar temps al mòdem a processar el SMS anterior.
     Public Const STATUS_NO = "No" 'Estatus del missatge reenviat si no s'ha enviat correctament.
     Public Const STATUS_NONE = "-" 'Estatus del reenviament del missatge si no hi ha a qui enviar.
@@ -127,18 +127,21 @@ Public Class CCC
             .Columns(2).Name = "Darrer missatge rebut"
             .Columns(2).AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
             .Columns(2).SortMode = DataGridViewColumnSortMode.NotSortable
-            .Columns(3).Name = "Data missatge"
+            .Columns(3).Name = "Filtre"
             .Columns(3).AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
             .Columns(3).SortMode = DataGridViewColumnSortMode.NotSortable
-            .Columns(4).Name = "Data recepció"
+            .Columns(4).Name = "Data missatge"
             .Columns(4).AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
             .Columns(4).SortMode = DataGridViewColumnSortMode.NotSortable
-            .Columns(5).Name = "SMS Processat"
+            .Columns(5).Name = "Data recepció"
             .Columns(5).AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
             .Columns(5).SortMode = DataGridViewColumnSortMode.NotSortable
-            .Columns(6).Name = "Alarmes activades"
+            .Columns(6).Name = "SMS Processat"
             .Columns(6).AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
             .Columns(6).SortMode = DataGridViewColumnSortMode.NotSortable
+            .Columns(7).Name = "Alarmes activades"
+            .Columns(7).AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+            .Columns(7).SortMode = DataGridViewColumnSortMode.NotSortable
         End With
 
         Dim captador As New Captador
@@ -171,6 +174,7 @@ Public Class CCC
                 Dim crrntRow As Integer
                 Dim fecha As String = ""
                 Dim lastMessage As String = ""
+                Dim filterOfFilters As String = ""
                 'Recuperem el darrer estat i missatge coneguts
                 capta.FuncioDarrerEstatConegut(capta.LastState)
 
@@ -179,10 +183,11 @@ Public Class CCC
                     If sms.Name <> "" Then
                         fecha = sms.DataHora
                         lastMessage = sms.Body
+                        filterOfFilters = sms.Filter & " de " & sms.NumFilters
                     Else
                         fecha = "-"
+                        filterOfFilters = "-"
                     End If
-
                 End If
 
                 crrntRow = -1
@@ -190,7 +195,7 @@ Public Class CCC
                     crrntRow = DataGridView.CurrentRow.Index
                 End If
 
-                Dim fila() As String = {capta.Nom, capta.LastState, lastMessage, fecha, capta.ReceptionDate, capta.lastMessageStatus, capta.Actiu}
+                Dim fila() As String = {capta.Nom, capta.LastState, lastMessage, filterOfFilters, fecha, capta.ReceptionDate, capta.lastMessageStatus, capta.Actiu}
                 'Busquem si el captador ja està al DataGridView per actualitzar-lo i no afegir-lo si existeix
                 Dim rowindex As Integer = -1
                 For Each row As DataGridViewRow In DataGridView.Rows
@@ -791,10 +796,9 @@ Public Class CCC
                     returnstr = returnstr.Remove(0, indexa + 1)
                     'Busquem data i hora d'enviament
                     indexa = returnstr.IndexOf(vbCr)
-                    Dim datahora As DateTime
                     Try
-                        datahora = returnstr.Substring(0, indexa)
-                        txt.DataHora = datahora.ToString()
+                        txt.DataHora = returnstr.Substring(0, indexa)
+                        ' txt.DataHora = datahora.ToString()
                         IOTextFiles.RoundLog("txt.DataHora = " & txt.DataHora)
                     Catch ex As Exception
                         IOTextFiles.RoundLog("SMSWorker: SMS error data conversion-" & ex.Message)
@@ -1135,7 +1139,6 @@ Public Class CCC
                 CboxActivar.Checked = captador.Actiu
             End If
 
-            MostraHistorial(captador.Nom)
             'TBoxHistoric.Focus()
             ActivateOptions(True)
         End If
