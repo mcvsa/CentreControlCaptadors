@@ -873,7 +873,8 @@ Public Class CCC
                             json.devices(indexCaptador).addData(SMSText.Form(txt))
 
                             'Si el captador està seleccionat mostrarem l'historial actualitzat
-                            If DataGridView.CurrentRow.Index <> Nothing Then
+                            'If DataGridView.CurrentRow.Index <> Nothing Then
+                            If DataGridView.SelectedRows.Count > 0 Then
                                 If DataGridView.CurrentRow.Index = indexCaptador Then
                                     MostraHistorial(json.devices(indexCaptador).Nom)
                                 End If
@@ -1123,7 +1124,7 @@ Public Class CCC
 
         Dim captador As New Captador
         Dim nomCaptador As String
-        If DataGridView.RowCount > 0 Then
+        If DataGridView.SelectedRows.Count > 0 Then
             nomCaptador = Me.DataGridView(0, DataGridView.CurrentRow.Index).Value
 
             ' 1) Mostrem l'historial

@@ -273,3 +273,48 @@ File name: 'c:\users\radar\documents\visual studio 2013\Projects\CentreControlCa
 13/10/2015 16:58:02-txt.DataHora = 13/10/2015 0:06:00
 13/10/2015 16:58:02-Comencem a enviar mail
 13/10/2015 16:58:02-Enviant mail a : satradar@mcvsa.com
+14/10/2015 14:42:24-Obrint port
+14/10/2015 14:42:31-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/14,14:40:10+08"  Correus  PST        14/10/15 05:46Filtro #06/15Mensaje de testOK
+14/10/2015 14:42:31-txt.Phone = 686663429
+14/10/2015 14:42:32-txt.Name = Correus  PST
+14/10/2015 14:42:32-txt.DataHora = 14/10/2015 5:46:00
+14/10/2015 14:42:32-Comencem a enviar mail
+14/10/2015 14:42:32-Enviant mail a : satradar@mcvsa.com
+14/10/2015 14:44:24-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/14,14:43:58+08"  Correus  PST        14/10/15 05:46Filtro #06/15Mensaje de testOK
+14/10/2015 14:44:24-txt.Phone = 686663429
+14/10/2015 14:44:24-txt.Name = Correus  PST
+14/10/2015 14:44:24-txt.DataHora = 14/10/2015 5:46:00
+14/10/2015 14:46:10-Comencem a enviar mail
+14/10/2015 14:46:10-Enviant mail a : satradar@mcvsa.com
+14/10/2015 14:46:36-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/14,14:46:10+08"  Correus  PST        14/10/15 05:46Filtro #06/15Mensaje de testOK
+14/10/2015 14:46:36-txt.Phone = 686663429
+14/10/2015 14:46:36-txt.Name = Correus  PST
+14/10/2015 14:46:36-txt.DataHora = 14/10/2015 5:46:00
+14/10/2015 14:51:42-Comencem a enviar mail
+14/10/2015 14:51:42-Enviant mail a : satradar@mcvsa.com
+14/10/2015 14:52:23-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/14,14:51:57+08"  Correus  PST        14/10/15 05:46Filtro #06/15Mensaje de testOK
+14/10/2015 14:52:23-txt.Phone = 686663429
+14/10/2015 14:52:23-txt.Name = Correus  PST
+14/10/2015 14:52:23-txt.DataHora = 14/10/2015 5:46:00
+14/10/2015 14:53:25-Comencem a enviar mail
+14/10/2015 14:53:25-Enviant mail a : satradar@mcvsa.com
+14/10/2015 14:53:31-Response: AT+CMGL="ALL"+CMGL: 1,"REC UNREAD","+34686663429",,"15/10/14,14:53:01+08"  Correus  PST        14/10/15 05:46Filtro #06/15Mensaje de testOK
+14/10/2015 14:53:31-txt.Phone = 686663429
+14/10/2015 14:53:31-txt.Name = Correus  PST
+14/10/2015 14:53:31-txt.DataHora = 14/10/2015 5:46:00
+14/10/2015 14:53:44-Comencem a enviar mail
+14/10/2015 14:53:44-Enviant mail a : satradar@mcvsa.com
+14/10/2015 14:59:31-Obrint port
+14/10/2015 14:59:53-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/14,14:59:26+08"  Correus  PST        14/10/15 05:46Filtro #06/15Mensaje de testOK
+14/10/2015 14:59:53-txt.Phone = 686663429
+14/10/2015 14:59:53-txt.Name = Correus  PST
+14/10/2015 14:59:53-txt.DataHora = 14/10/2015 5:46:00
+14/10/2015 15:00:09-Comencem a enviar mail
+14/10/2015 15:00:09-Enviant mail a : satradar@mcvsa.com
+14/10/2015 15:00:35-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/14,15:00:06+08"  Correus  PST        14/10/15 05:46Filtro #06/15Mensaje de testOK
+14/10/2015 15:00:35-txt.Phone = 686663429
+14/10/2015 15:00:35-txt.Name = Correus  PST
+14/10/2015 15:00:35-txt.DataHora = 14/10/2015 5:46:00
+14/10/2015 15:01:34-Comencem a enviar mail
+14/10/2015 15:01:34-Enviant mail a : satradar@mcvsa.com
+14/10/2015 15:04:40-Obrint port
