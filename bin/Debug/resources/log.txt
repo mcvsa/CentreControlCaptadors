@@ -481,3 +481,21 @@ Object name: 'CCC'.
 29/10/2015 11:00:20-Comencem a enviar mail
 29/10/2015 11:00:20-Enviant mail a : satradar@mcvsa.com
 29/10/2015 11:01:13-Obrint port
+29/10/2015 11:13:13-Obrint port
+29/10/2015 11:13:38-UpdateDataGridView Thread exception: Cannot access a disposed object.
+Object name: 'CCC'.
+29/10/2015 11:13:41-Obrint port
+29/10/2015 11:15:13-Comencem a enviar mail
+29/10/2015 11:15:13-Enviant mail a : satradar@mcvsa.com
+29/10/2015 11:15:34-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/29,11:15:00+04"  Correus  PST        14/10/15 05:46Filtro #06/15Mensaje de testOK
+29/10/2015 11:15:34-txt.Phone = 686663429
+29/10/2015 11:15:34-txt.Name = Correus  PST
+29/10/2015 11:15:34-txt.DataHora = 14/10/2015 5:46:00
+29/10/2015 11:15:34-Comencem a enviar mail
+29/10/2015 11:15:34-Enviant mail a : satradar@mcvsa.com
+29/10/2015 11:16:16-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/29,11:15:43+04"  Port Vell PM2.5     13/10/15 00:06Filtro #04/13Filtro finaliz.OK
+29/10/2015 11:16:16-txt.Phone = 686663429
+29/10/2015 11:16:16-txt.Name = Port Vell PM2.5
+29/10/2015 11:16:16-txt.DataHora = 13/10/2015 0:06:00
+29/10/2015 11:16:16-Comencem a enviar mail
+29/10/2015 11:16:16-Enviant mail a : satradar@mcvsa.com

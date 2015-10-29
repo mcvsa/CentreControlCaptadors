@@ -23,7 +23,7 @@ Public Class CCC
     Const TIME4THREAD As Integer = 5000 'Cada quant de temps mirem els SMS rebuts: 1000
     Const TIME4SPACE As Integer = 5000 'Cada quant de temps mirem l'espai disponible de disc.
     Const LOWHDD As Long = 314572800 '300 Megues: avís de poc espai al disc dur.
-    Const NUMMAXOFSMS As Integer = 10 'Número màxim de missatges al panell de darrers avisos.
+    Const NUMMAXOFSMS As Integer = 50 'Número màxim de missatges al panell de darrers avisos.
     Const NUM_COLS As Integer = 8 'Número de columnes del DataGridView.
     Const TIME2SMS As Integer = 5000 'Temps d'espera per a donar temps al mòdem a processar el SMS anterior.
     Public Const STATUS_NO = "No" 'Estatus del missatge reenviat si no s'ha enviat correctament.
@@ -1252,7 +1252,6 @@ Public Class Captador
     Public UsersList As New List(Of Integer)
     Public ReceptionDate As String = ""
     Public lastMessageStatus As String = ""
-    Public dataIniciCicle As Date
     Public filterDuration As Integer = 0
     Public totalFilters = 0
     Public filtersLeft = 0
