@@ -38,6 +38,8 @@ Partial Class ConfigAlerts
         Me.BtSelectAll = New System.Windows.Forms.Button()
         Me.BtDeselectAll = New System.Windows.Forms.Button()
         Me.GBoxCaptadors = New System.Windows.Forms.GroupBox()
+        Me.LbInfoCanviFiltre = New System.Windows.Forms.Label()
+        Me.BtConfigureCycle = New System.Windows.Forms.Button()
         Me.GBoxConfigAndTest = New System.Windows.Forms.GroupBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.BtClose = New System.Windows.Forms.Button()
@@ -49,7 +51,7 @@ Partial Class ConfigAlerts
         '
         'BtTestMail
         '
-        Me.BtTestMail.Location = New System.Drawing.Point(11, 70)
+        Me.BtTestMail.Location = New System.Drawing.Point(11, 66)
         Me.BtTestMail.Name = "BtTestMail"
         Me.BtTestMail.Size = New System.Drawing.Size(100, 30)
         Me.BtTestMail.TabIndex = 14
@@ -58,7 +60,7 @@ Partial Class ConfigAlerts
         '
         'BtConfigMail
         '
-        Me.BtConfigMail.Location = New System.Drawing.Point(11, 28)
+        Me.BtConfigMail.Location = New System.Drawing.Point(11, 24)
         Me.BtConfigMail.Name = "BtConfigMail"
         Me.BtConfigMail.Size = New System.Drawing.Size(100, 30)
         Me.BtConfigMail.TabIndex = 17
@@ -89,9 +91,9 @@ Partial Class ConfigAlerts
         Me.GBoxUsers.Controls.Add(Me.BtModifyUser)
         Me.GBoxUsers.Controls.Add(Me.LBUsers)
         Me.GBoxUsers.Controls.Add(Me.BtAddUser)
-        Me.GBoxUsers.Location = New System.Drawing.Point(238, 13)
+        Me.GBoxUsers.Location = New System.Drawing.Point(314, 13)
         Me.GBoxUsers.Name = "GBoxUsers"
-        Me.GBoxUsers.Size = New System.Drawing.Size(324, 286)
+        Me.GBoxUsers.Size = New System.Drawing.Size(290, 286)
         Me.GBoxUsers.TabIndex = 25
         Me.GBoxUsers.TabStop = False
         Me.GBoxUsers.Text = "Usuaris"
@@ -100,7 +102,7 @@ Partial Class ConfigAlerts
         '
         Me.BtAssignDevices.BackColor = System.Drawing.SystemColors.ControlDark
         Me.BtAssignDevices.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.BtAssignDevices.Location = New System.Drawing.Point(218, 24)
+        Me.BtAssignDevices.Location = New System.Drawing.Point(182, 24)
         Me.BtAssignDevices.Name = "BtAssignDevices"
         Me.BtAssignDevices.Size = New System.Drawing.Size(100, 100)
         Me.BtAssignDevices.TabIndex = 32
@@ -109,7 +111,7 @@ Partial Class ConfigAlerts
         '
         'BtRemoveUser
         '
-        Me.BtRemoveUser.Location = New System.Drawing.Point(218, 245)
+        Me.BtRemoveUser.Location = New System.Drawing.Point(182, 245)
         Me.BtRemoveUser.Name = "BtRemoveUser"
         Me.BtRemoveUser.Size = New System.Drawing.Size(100, 30)
         Me.BtRemoveUser.TabIndex = 30
@@ -118,7 +120,7 @@ Partial Class ConfigAlerts
         '
         'BtModifyUser
         '
-        Me.BtModifyUser.Location = New System.Drawing.Point(218, 211)
+        Me.BtModifyUser.Location = New System.Drawing.Point(182, 211)
         Me.BtModifyUser.Name = "BtModifyUser"
         Me.BtModifyUser.Size = New System.Drawing.Size(100, 30)
         Me.BtModifyUser.TabIndex = 31
@@ -128,14 +130,14 @@ Partial Class ConfigAlerts
         'LBUsers
         '
         Me.LBUsers.FormattingEnabled = True
-        Me.LBUsers.Location = New System.Drawing.Point(10, 24)
+        Me.LBUsers.Location = New System.Drawing.Point(6, 24)
         Me.LBUsers.Name = "LBUsers"
-        Me.LBUsers.Size = New System.Drawing.Size(199, 251)
+        Me.LBUsers.Size = New System.Drawing.Size(170, 251)
         Me.LBUsers.TabIndex = 0
         '
         'BtAddUser
         '
-        Me.BtAddUser.Location = New System.Drawing.Point(218, 175)
+        Me.BtAddUser.Location = New System.Drawing.Point(182, 175)
         Me.BtAddUser.Name = "BtAddUser"
         Me.BtAddUser.Size = New System.Drawing.Size(100, 30)
         Me.BtAddUser.TabIndex = 29
@@ -147,14 +149,14 @@ Partial Class ConfigAlerts
         Me.CkLBCaptadors.CheckOnClick = True
         Me.CkLBCaptadors.ColumnWidth = 132
         Me.CkLBCaptadors.FormattingEnabled = True
-        Me.CkLBCaptadors.Location = New System.Drawing.Point(9, 25)
+        Me.CkLBCaptadors.Location = New System.Drawing.Point(6, 24)
         Me.CkLBCaptadors.Name = "CkLBCaptadors"
-        Me.CkLBCaptadors.Size = New System.Drawing.Size(206, 214)
+        Me.CkLBCaptadors.Size = New System.Drawing.Size(170, 244)
         Me.CkLBCaptadors.TabIndex = 23
         '
         'BtSelectAll
         '
-        Me.BtSelectAll.Location = New System.Drawing.Point(12, 245)
+        Me.BtSelectAll.Location = New System.Drawing.Point(182, 202)
         Me.BtSelectAll.Name = "BtSelectAll"
         Me.BtSelectAll.Size = New System.Drawing.Size(100, 30)
         Me.BtSelectAll.TabIndex = 25
@@ -163,7 +165,7 @@ Partial Class ConfigAlerts
         '
         'BtDeselectAll
         '
-        Me.BtDeselectAll.Location = New System.Drawing.Point(118, 245)
+        Me.BtDeselectAll.Location = New System.Drawing.Point(182, 238)
         Me.BtDeselectAll.Name = "BtDeselectAll"
         Me.BtDeselectAll.Size = New System.Drawing.Size(100, 30)
         Me.BtDeselectAll.TabIndex = 27
@@ -172,21 +174,42 @@ Partial Class ConfigAlerts
         '
         'GBoxCaptadors
         '
+        Me.GBoxCaptadors.Controls.Add(Me.LbInfoCanviFiltre)
+        Me.GBoxCaptadors.Controls.Add(Me.BtConfigureCycle)
         Me.GBoxCaptadors.Controls.Add(Me.CkLBCaptadors)
         Me.GBoxCaptadors.Controls.Add(Me.BtSelectAll)
         Me.GBoxCaptadors.Controls.Add(Me.BtDeselectAll)
         Me.GBoxCaptadors.Location = New System.Drawing.Point(8, 13)
         Me.GBoxCaptadors.Name = "GBoxCaptadors"
-        Me.GBoxCaptadors.Size = New System.Drawing.Size(224, 286)
+        Me.GBoxCaptadors.Size = New System.Drawing.Size(290, 286)
         Me.GBoxCaptadors.TabIndex = 28
         Me.GBoxCaptadors.TabStop = False
         Me.GBoxCaptadors.Text = "Captadors"
+        '
+        'LbInfoCanviFiltre
+        '
+        Me.LbInfoCanviFiltre.AutoSize = True
+        Me.LbInfoCanviFiltre.Location = New System.Drawing.Point(182, 142)
+        Me.LbInfoCanviFiltre.Name = "LbInfoCanviFiltre"
+        Me.LbInfoCanviFiltre.Size = New System.Drawing.Size(0, 13)
+        Me.LbInfoCanviFiltre.TabIndex = 34
+        '
+        'BtConfigureCycle
+        '
+        Me.BtConfigureCycle.BackColor = System.Drawing.SystemColors.ControlDark
+        Me.BtConfigureCycle.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.BtConfigureCycle.Location = New System.Drawing.Point(182, 23)
+        Me.BtConfigureCycle.Name = "BtConfigureCycle"
+        Me.BtConfigureCycle.Size = New System.Drawing.Size(100, 100)
+        Me.BtConfigureCycle.TabIndex = 33
+        Me.BtConfigureCycle.Text = "Configurar cicle captador"
+        Me.BtConfigureCycle.UseVisualStyleBackColor = False
         '
         'GBoxConfigAndTest
         '
         Me.GBoxConfigAndTest.Controls.Add(Me.BtTestMail)
         Me.GBoxConfigAndTest.Controls.Add(Me.BtConfigMail)
-        Me.GBoxConfigAndTest.Location = New System.Drawing.Point(588, 13)
+        Me.GBoxConfigAndTest.Location = New System.Drawing.Point(621, 13)
         Me.GBoxConfigAndTest.Name = "GBoxConfigAndTest"
         Me.GBoxConfigAndTest.Size = New System.Drawing.Size(121, 111)
         Me.GBoxConfigAndTest.TabIndex = 29
@@ -197,7 +220,7 @@ Partial Class ConfigAlerts
         '
         Me.GroupBox1.Controls.Add(Me.BtTestSMS)
         Me.GroupBox1.Controls.Add(Me.CBoxSerialPort)
-        Me.GroupBox1.Location = New System.Drawing.Point(588, 142)
+        Me.GroupBox1.Location = New System.Drawing.Point(621, 142)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(121, 109)
         Me.GroupBox1.TabIndex = 30
@@ -206,7 +229,7 @@ Partial Class ConfigAlerts
         '
         'BtClose
         '
-        Me.BtClose.Location = New System.Drawing.Point(579, 269)
+        Me.BtClose.Location = New System.Drawing.Point(612, 269)
         Me.BtClose.Name = "BtClose"
         Me.BtClose.Size = New System.Drawing.Size(130, 30)
         Me.BtClose.TabIndex = 31
@@ -217,7 +240,7 @@ Partial Class ConfigAlerts
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(719, 313)
+        Me.ClientSize = New System.Drawing.Size(754, 313)
         Me.Controls.Add(Me.BtClose)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GBoxConfigAndTest)
@@ -225,13 +248,14 @@ Partial Class ConfigAlerts
         Me.Controls.Add(Me.GBoxUsers)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
-        Me.MaximumSize = New System.Drawing.Size(735, 351)
+        Me.MaximumSize = New System.Drawing.Size(770, 351)
         Me.MinimizeBox = False
-        Me.MinimumSize = New System.Drawing.Size(735, 351)
+        Me.MinimumSize = New System.Drawing.Size(770, 351)
         Me.Name = "ConfigAlerts"
         Me.Text = "Configuració Alertes"
         Me.GBoxUsers.ResumeLayout(False)
         Me.GBoxCaptadors.ResumeLayout(False)
+        Me.GBoxCaptadors.PerformLayout()
         Me.GBoxConfigAndTest.ResumeLayout(False)
         Me.GroupBox1.ResumeLayout(False)
         Me.ResumeLayout(False)
@@ -255,4 +279,6 @@ Partial Class ConfigAlerts
     Friend WithEvents GBoxConfigAndTest As System.Windows.Forms.GroupBox
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents BtClose As System.Windows.Forms.Button
+    Friend WithEvents BtConfigureCycle As System.Windows.Forms.Button
+    Friend WithEvents LbInfoCanviFiltre As System.Windows.Forms.Label
 End Class

@@ -99,6 +99,12 @@
       <DependentUpon>CentreControlCaptadors.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ConfigCycle.Designer.vb">
+      <DependentUpon>ConfigCycle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigCycle.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormConfigMail.Designer.vb">
       <DependentUpon>FormConfigMail.vb</DependentUpon>
     </Compile>
@@ -146,6 +152,12 @@
   <ItemGroup>
     <EmbeddedResource Include="CentreControlCaptadors.resx">
       <DependentUpon>CentreControlCaptadors.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigAlerts.resx">
+      <DependentUpon>ConfigAlerts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigCycle.resx">
+      <DependentUpon>ConfigCycle.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

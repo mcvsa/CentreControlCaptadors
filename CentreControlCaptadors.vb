@@ -28,6 +28,7 @@ Public Class CCC
     Const TIME2SMS As Integer = 5000 'Temps d'espera per a donar temps al mòdem a processar el SMS anterior.
     Public Const STATUS_NO = "No" 'Estatus del missatge reenviat si no s'ha enviat correctament.
     Public Const STATUS_NONE = "-" 'Estatus del reenviament del missatge si no hi ha a qui enviar.
+    Public Const DELAY_MESSAGE = "Possible problema canvi de filtre"
 
     Public ReadOnly SETTINGSFILE As String = Application.StartupPath & "\resources\settings.json"
     Public ReadOnly STARTUP_PATH = Application.StartupPath
@@ -121,27 +122,43 @@ Public Class CCC
             .Columns(0).Name = "Captador"
             .Columns(0).AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
             .Columns(0).SortMode = DataGridViewColumnSortMode.NotSortable
+            .Columns(0).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft
+            .Columns(0).HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleLeft
             .Columns(1).Name = "Últim estat conegut"
             .Columns(1).AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
             .Columns(1).SortMode = DataGridViewColumnSortMode.NotSortable
+            .Columns(1).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
+            .Columns(1).HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter
             .Columns(2).Name = "Darrer missatge rebut"
             .Columns(2).AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
             .Columns(2).SortMode = DataGridViewColumnSortMode.NotSortable
+            .Columns(2).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
+            .Columns(2).HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter
             .Columns(3).Name = "Filtre"
             .Columns(3).AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
             .Columns(3).SortMode = DataGridViewColumnSortMode.NotSortable
+            .Columns(3).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
+            .Columns(3).HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter
             .Columns(4).Name = "Data missatge"
             .Columns(4).AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
             .Columns(4).SortMode = DataGridViewColumnSortMode.NotSortable
-            .Columns(5).Name = "Data recepció"
+            .Columns(4).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
+            .Columns(4).HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter
+            .Columns(5).Name = "Recepció darrer estat"
             .Columns(5).AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
             .Columns(5).SortMode = DataGridViewColumnSortMode.NotSortable
-            .Columns(6).Name = "SMS Processat"
-            .Columns(6).AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+            .Columns(5).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
+            .Columns(5).HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter
+            .Columns(6).Name = "Darrer SMS Processat"
+            .Columns(6).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
             .Columns(6).SortMode = DataGridViewColumnSortMode.NotSortable
-            .Columns(7).Name = "Alarmes activades"
-            .Columns(7).AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+            .Columns(6).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
+            .Columns(6).HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter
+            .Columns(7).Name = "On-Time"
+            .Columns(7).AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
             .Columns(7).SortMode = DataGridViewColumnSortMode.NotSortable
+            .Columns(7).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
+            .Columns(7).HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter
         End With
 
         Dim captador As New Captador
@@ -229,6 +246,13 @@ Public Class CCC
                     Case Else
                         DataGridView.Item(1, rowindex).Style.BackColor = Color.White
                 End Select
+                Select Case capta.Actiu
+                    Case False
+                        DataGridView.Item(7, rowindex).Style.BackColor = Color.Red
+                    Case True
+                        DataGridView.Item(7, rowindex).Style.BackColor = Color.White
+                End Select
+
 
                 If crrntRow <> -1 And crrntRow < DataGridView.Rows.Count Then
                     DataGridView.CurrentCell = DataGridView(0, crrntRow)
@@ -521,7 +545,6 @@ Public Class CCC
         BtNom.Enabled = state
         BtTelefon.Enabled = state
         BtRemove.Enabled = state
-        CboxActivar.Enabled = state
 
         If state = False Then
             GBoxSetup.Text = ""
@@ -880,52 +903,52 @@ Public Class CCC
                                 End If
                             End If
                             'Actualitzem el panell dels darrers missatges i la resta de dades per pantalla
-                            '...sempre que el captador estigui actiu
-                            If json.devices(indexCaptador).Actiu Then
+                            If txt.Body.IndexOf("test") < 0 Then
                                 JsonFile.SetReceptionDate(txt.DataRx, indexCaptador)
-
-                                'Envia mails amb un nou thread.
-                                Dim threadMailerDaemon As New Thread(AddressOf MailerDaemonWorker)
-                                threadMailerDaemon.Start(txt)
-
-                                'Envia SMS
-                                Dim phone As String = ""
-                                Dim userID As Integer
-                                For Each userID In json.devices(indexCaptador).UsersList
-                                    phone = JsonFile.getPhone(userID)
-                                    If phone <> Nothing And phone <> "" Then
-                                        Dim resSMS = SMSConfiguration.sendSMS(phone, SerialPort1, txt.AllMessage)
-                                        If resSMS <> "OK" Then
-                                            JsonFile.SetLastMessageStatus(STATUS_NO, indexCaptador)
-                                            IOTextFiles.RoundLog("& Error sending SMS: " & txt.AllMessage)
-                                            Dim unsent As New unsentWorkaround
-                                            unsent.indexOfCaptador = indexCaptador
-                                            unsent.phone = phone
-                                            unsent.message = txt.AllMessage
-                                            unsentTexts.Add(unsent)
-                                        Else
-                                            JsonFile.SetLastMessageStatus(DateTime.Now.ToString(), indexCaptador)
-                                        End If
-                                        IOTextFiles.RoundLog("Res SMS = " & resSMS.ToString)
-                                        'Thread.Sleep(TIME2SMS)
-                                        'Abans d'enviar el següent SMS mirem si hi ha missatges nous rebuts per a no perdre'ls en cas extrem
-                                        If connectStablished Then
-                                            SMSConfiguration.sendToModem(SerialPort1, "AT+CMGL=" & Chr(34) & "REC UNREAD" & Chr(34) & Chr(13))
-                                            response = SMSConfiguration.readFromModem(SerialPort1, finalChain)
-                                            IOTextFiles.RoundLog(response.ToString)
-                                            If response = "ERROR" Then
-                                                IOTextFiles.RoundLog("& Error: " & "AT+CMGL 2nd time")
-                                                'connectStablished = False
-                                                'ChangeConnectSign(-1)
-                                            End If
-                                            returnstr += response
-                                            returnstr = returnstr.Replace("\0D", vbCr)
-                                        End If
-                                    End If
-                                Next
-
-                                updateDataGridView(json.devices(indexCaptador))
                             End If
+                            JsonFile.setFilters(txt.NumFilters, txt.Filter, indexCaptador)
+
+                            'Envia mails amb un nou thread.
+                            Dim threadMailerDaemon As New Thread(AddressOf MailerDaemonWorker)
+                            threadMailerDaemon.Start(txt)
+
+                            'Envia SMS
+                            Dim phone As String = ""
+                            Dim userID As Integer
+                            For Each userID In json.devices(indexCaptador).UsersList
+                                phone = JsonFile.getPhone(userID)
+                                If phone <> Nothing And phone <> "" Then
+                                    Dim resSMS = SMSConfiguration.sendSMS(phone, SerialPort1, txt.AllMessage)
+                                    If resSMS <> "OK" Then
+                                        JsonFile.SetLastMessageStatus(STATUS_NO, indexCaptador)
+                                        IOTextFiles.RoundLog("& Error sending SMS: " & txt.AllMessage)
+                                        Dim unsent As New unsentWorkaround
+                                        unsent.indexOfCaptador = indexCaptador
+                                        unsent.phone = phone
+                                        unsent.message = txt.AllMessage
+                                        unsentTexts.Add(unsent)
+                                    Else
+                                        JsonFile.SetLastMessageStatus(DateTime.Now.ToString(), indexCaptador)
+                                    End If
+                                    IOTextFiles.RoundLog("Res SMS = " & resSMS.ToString)
+                                    'Thread.Sleep(TIME2SMS)
+                                    'Abans d'enviar el següent SMS mirem si hi ha missatges nous rebuts per a no perdre'ls en cas extrem
+                                    If connectStablished Then
+                                        SMSConfiguration.sendToModem(SerialPort1, "AT+CMGL=" & Chr(34) & "REC UNREAD" & Chr(34) & Chr(13))
+                                        response = SMSConfiguration.readFromModem(SerialPort1, finalChain)
+                                        IOTextFiles.RoundLog(response.ToString)
+                                        If response = "ERROR" Then
+                                            IOTextFiles.RoundLog("& Error: " & "AT+CMGL 2nd time")
+                                            'connectStablished = False
+                                            'ChangeConnectSign(-1)
+                                        End If
+                                        returnstr += response
+                                        returnstr = returnstr.Replace("\0D", vbCr)
+                                    End If
+                                End If
+                            Next
+                            updateDataGridView(json.devices(indexCaptador))
+
                         End If
 
                     ElseIf (indexCaptador = -1) Then
@@ -961,6 +984,9 @@ Public Class CCC
                 For Each index In indexUnsent
                     unsentTexts.RemoveAt(index)
                 Next
+
+                Autocontrol()
+
             End While
         Else
             ClosePort(SerialPort1)
@@ -969,6 +995,54 @@ Public Class CCC
         UpdatePortsList()
         'ChangeConnectSign(-1)
 
+    End Sub
+
+    Public Sub Autocontrol()
+        'Controla si els mails han arribat on-time i, si no és així, avisarà els usuaris pertinents.
+
+        Dim captador As New Captador
+        Dim i As Integer = 0
+
+        For Each captador In json.devices
+            If captador.filterDuration > 0 Then
+                If captador.FilterOnTime = False Then
+                    If captador.Actiu Then
+                        Dim phone As String = ""
+                        Dim userID As Integer
+
+                        'Muntem primer un SMSText
+                        Dim text As New SMSText
+                        text.Phone = captador.Telefon
+                        text.Name = captador.Nom
+                        text.AllMessage = DELAY_MESSAGE & " - " & "Falten: " & captador.filtersLeft & " de " & captador.totalFilters & " filtres"
+
+                        'Enviem els SMS pertinents:
+                        For Each userID In captador.UsersList
+                            phone = JsonFile.getPhone(userID)
+                            If phone <> Nothing And phone <> "" Then
+                                Dim resSMS = SMSConfiguration.sendSMS(phone, SerialPort1, captador.Nom & " - " & text.AllMessage)
+                                If resSMS <> "OK" Then
+                                    IOTextFiles.RoundLog("& Error sending SMS: " & captador.Nom & " - " & text.AllMessage)
+                                    JsonFile.setActive(True, i)
+                                Else
+                                    JsonFile.setActive(False, i)
+                                End If
+                            Else
+                                'Donem per segur que el mail serà enviat, per tant, desactivem les alarmes
+                                JsonFile.setActive(False, i)
+                            End If
+                        Next
+                        'Enviem els mails pertinents amb un nou thread:
+                        Dim thread2MailerDaemon As New Thread(AddressOf MailerDaemonWorker)
+                        thread2MailerDaemon.Start(text)
+                    End If
+                Else
+                    JsonFile.setActive(True, i)
+                End If
+            End If
+            updateDataGridView(captador)
+            i += 1
+        Next
     End Sub
 
     Public Sub MailerDaemonWorker(ByVal smsTxt As SMSText)
@@ -1105,20 +1179,6 @@ Public Class CCC
         Process.Start(webAddress)
     End Sub
 
-    Private Sub CBoxActivar_CheckedChanged(sender As Object, e As EventArgs) Handles CboxActivar.Click
-        Dim captador As New Captador
-        Dim nomCaptador As String
-
-        nomCaptador = Me.DataGridView(0, DataGridView.CurrentRow.Index).Value
-
-        If nomCaptador <> Nothing Then
-            captador = json.devices(buscaCaptador(nomCaptador))
-            captador.Actiu = CboxActivar.Checked
-            updateDataGridView(captador)
-            DataGridView.Focus()
-        End If
-    End Sub
-
     Private Sub DataGridView_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView.CellContentClick, DataGridView.CellClick
         ' Quan es selecciona un captador:
 
@@ -1140,7 +1200,6 @@ Public Class CCC
             Else
                 TBoxTelefon.Text = json.devices(indexCaptador).Telefon
                 captador = json.devices(indexCaptador)
-                CboxActivar.Checked = captador.Actiu
             End If
 
             'TBoxHistoric.Focus()
@@ -1165,6 +1224,7 @@ Public Class CCC
         ConfigAlerts.Show()
     End Sub
 
+
 End Class
 
 Public Class Captador
@@ -1179,6 +1239,7 @@ Public Class Captador
     Public Const MENSAJE_TEST As String = "MISSATGE DE TEST"
     Public Const NO_MESSAGE As String = "-"
 
+    Public Const ALLOWED_DELAY As Integer = 15 'Retràs permés d'un filtre en minuts
     'Classe captador: nom, telèfon associat i estat (actiu o no)
 
     Public Nom As String
@@ -1191,6 +1252,11 @@ Public Class Captador
     Public UsersList As New List(Of Integer)
     Public ReceptionDate As String = ""
     Public lastMessageStatus As String = ""
+    Public dataIniciCicle As Date
+    Public filterDuration As Integer = 0
+    Public totalFilters = 0
+    Public filtersLeft = 0
+
 
     Public Function FuncioDarrerMissatge()
         Dim linea As String
@@ -1268,6 +1334,30 @@ Public Class Captador
 
     End Sub
 
+    Public Function FilterOnTime()
+        'Mira si un filtre ha arribat a l'hora que li tocava +/- un interval de temps
+        'Si la diferència és més gran que el delay permés retornarà FALSE, si no, retornarà TRUE
+
+        'Només té sentit si hi ha duració del filtre configurada, si no està configurat retornarà TRUE
+        If (filterDuration) > 0 And ReceptionDate <> "" Then
+            'Primer es calcula la diferència entre la data actual i la data d'inici de cicle
+            Dim diffMinutes As Long = DateDiff(DateInterval.Minute, CDate(ReceptionDate), DateTime.Now)
+            'Debug:
+            'Dim diffHours As Long = DateDiff(DateInterval.Minute, CDate(ReceptionDate), DateTime.Now)
+            'Segon es compara amb el delay permès
+            'Treballarem en minuts perquè si no, la part entera de la funció "DateDiff" farà que no funcioni bé
+
+            If Math.Abs(diffMinutes) > (filterDuration * 60) + ALLOWED_DELAY Then
+                Return False
+            Else
+                Return True
+            End If
+        Else
+            Return True
+        End If
+
+    End Function
+
 End Class
 
 Public Class SMSText
@@ -1286,7 +1376,6 @@ Public Class SMSText
     Public Shared Function Deform(ByRef line As String)
         Dim txt As New SMSText
         Dim auxArray() As String
-
 
         auxArray = line.Split(",")
         If auxArray.Count = 5 Then
@@ -1394,10 +1483,11 @@ Public Class JsonFile
 
     Public Shared Function getId(ByRef userName As String)
         Dim id As Integer = -1
+        Dim user As New User
 
-        For Each User In CCC.json.users
-            If User.name = userName And User.activeUser = True Then
-                Return User.id
+        For Each user In CCC.json.users
+            If user.name = userName And user.activeUser = True Then
+                Return user.id
             End If
         Next
         Return id
@@ -1470,11 +1560,38 @@ Public Class JsonFile
         IOTextFiles.updateJsonFile(CCC.json)
     End Sub
 
+    Public Shared Sub setFilters(ByVal totalFilters As String, ByVal filter As String, ByVal index As Integer)
+        'Setegem el número de filtres total i els que falten a partir del que rebem als missatges de text.
+        CCC.json.devices(index).totalFilters = CInt(totalFilters)
+        CCC.json.devices(index).filtersLeft = CInt(totalFilters) - CInt(filter)
+        IOTextFiles.updateJsonFile(CCC.json)
+
+    End Sub
+
     Public Shared Sub SetLastMessageStatus(ByVal LastMessage As String, ByVal index As Integer)
         CCC.json.devices(index).lastMessageStatus = LastMessage
         IOTextFiles.updateJsonFile(CCC.json)
     End Sub
 
+    Public Shared Sub setCycleParams(ByVal deviceNames As List(Of String), ByVal filterDuration As Integer)
+        'Setegem l'hora d'inici del cicle i la duració del filtre als captadors que toqui
+
+        Dim name As String
+
+        For Each name In deviceNames
+            Dim deviceIndex = CCC.buscaCaptador(name) 'Busca el captador
+            If deviceIndex >= 0 Then 'Si el captador existeix
+                CCC.json.devices(deviceIndex).filterDuration = filterDuration 'Afegim la duració dels filtres
+            End If 'Si el captador no existeix no fem res
+        Next
+        IOTextFiles.updateJsonFile(CCC.json)
+    End Sub
+
+    Public Shared Sub setActive(ByVal active As Boolean, ByVal index As Integer)
+        'Setegem si el captador és o no actiu
+        CCC.json.devices(index).Actiu = active
+
+    End Sub
 End Class
 
 Public Class unsentWorkaround

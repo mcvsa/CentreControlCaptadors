@@ -1,320 +1,483 @@
-﻿06/10/2015 13:05:17-System.IO.FileNotFoundException: Could not find file 'c:\users\radar\documents\visual studio 2013\Projects\CentreControlCaptadors\CentreControlCaptadors\bin\Debug\resources\settings.json'.
-File name: 'c:\users\radar\documents\visual studio 2013\Projects\CentreControlCaptadors\CentreControlCaptadors\bin\Debug\resources\settings.json'
-   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
-   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
-   at System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
-   at System.IO.File.ReadAllText(String path)
-   at Microsoft.VisualBasic.MyServices.FileSystemProxy.ReadAllText(String file)
-   at CentreControlCaptadors.JsonFile.updateJsonVar() in c:\users\radar\documents\visual studio 2013\Projects\CentreControlCaptadors\CentreControlCaptadors\CentreControlCaptadors.vb:line 1330
-06/10/2015 13:13:28-Comencem a enviar mail
-06/10/2015 13:13:28-Enviant mail a : satradar@mcvsa.com
-06/10/2015 13:13:58-Obrint port
-06/10/2015 13:14:08-Error receiving OK-The operation has timed out.
-06/10/2015 13:14:08-& Error: AT+CMGL
-06/10/2015 13:14:52-Obrint port
-06/10/2015 13:15:44-Obrint port
-06/10/2015 13:15:48-Enviant SMS al tlf: 686663429
-06/10/2015 13:15:48-Comencem a enviar SMS amb el text: Missatge de prova
-06/10/2015 13:15:48-Resposta = 
-06/10/2015 13:15:48-resposta modem = AT+CMGS="+34686663429"
+﻿23/10/2015 14:12:33-Obrint port
+23/10/2015 14:12:42-Error receiving OK-The operation has timed out.
+23/10/2015 14:12:42-& Error: AT+CMGL
+23/10/2015 14:12:47-Obrint port
+23/10/2015 14:13:36-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/23,14:09:54+08"  Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.+CMGL: 1,"REC UNREAD","+34686663429",,"15/10/23,14:13:02+08"  Port Vell PM2.5     13/10/15 00:06Filtro #04/13Filtro finaliz.OK
+23/10/2015 14:13:36-txt.Phone = 686663429
+23/10/2015 14:13:36-txt.Name = Port Vell PM2.5
+23/10/2015 14:13:36-txt.DataHora = 13/10/2015 0:06:00
+23/10/2015 14:13:50-Comencem a enviar mail
+23/10/2015 14:13:55-Enviant SMS al tlf: 686663429
+23/10/2015 14:13:55-Comencem a enviar SMS amb el text:   Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.Data recep. missatge: 23/10/2015 14:13:36
+23/10/2015 14:13:55-Resposta = 
+23/10/2015 14:13:55-Error mail: Value cannot be null.
+Parameter name: address-Missatge:   Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.Data recep. missatge: 23/10/2015 14:13:36-Receptors: 
+23/10/2015 14:13:55-resposta modem = AT+CMGS="+34686663429"
 > 
-06/10/2015 13:16:12-Obrint port
-06/10/2015 13:16:15-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/06,13:13:40+08"  Correus  PST        06/10/15 05:59Filtro #04/08Filtro finaliz.+CMGL: 1,"REC UNREAD","+34686663429",,"15/10/06,13:13:54+08"  Correus  PST        06/10/15 05:59Filtro #04/08Filtro finaliz.OK
-06/10/2015 13:16:15-txt.Phone = 686663429
-06/10/2015 13:16:15-txt.Name = Correus  PST
-06/10/2015 13:16:15-txt.DataHora = 06/10/2015 5:59:00
-06/10/2015 13:16:15-Enviant SMS al tlf: 686663429
-06/10/2015 13:16:15-Comencem a enviar SMS amb el text:   Correus  PST        06/10/15 05:59Filtro #04/08Filtro finaliz.Data recep. missatge: 06/10/2015 13:16:15
-06/10/2015 13:16:15-Comencem a enviar mail
-06/10/2015 13:16:15-Enviant mail a : satradar@mcvsa.com
-06/10/2015 13:16:15-Resposta = 
-06/10/2015 13:16:15-resposta modem = AT+CMGS="+34686663429"
+23/10/2015 14:13:57-Res SMS = OK
+23/10/2015 14:13:57-AT+CMGL="REC UNREAD"OK
+23/10/2015 14:13:57-Response: Filtro finaliz.+CMGL: 1,"REC UNREAD","+34686663429",,"15/10/23,14:13:02+08"  Port Vell PM2.5     13/10/15 00:06Filtro #04/13Filtro finaliz.OKAT+CMGL="REC UNREAD"OK
+23/10/2015 14:13:57-txt.Phone = 686663429
+23/10/2015 14:13:57-txt.Name = Port Vell PM2.5
+23/10/2015 14:13:57-txt.DataHora = 13/10/2015 0:06:00
+23/10/2015 14:13:57-Enviant SMS al tlf: 686663429
+23/10/2015 14:13:57-Comencem a enviar SMS amb el text:   Port Vell PM2.5     13/10/15 00:06Filtro #04/13Filtro finaliz.Data recep. missatge: 23/10/2015 14:13:57
+23/10/2015 14:13:57-Resposta = 
+23/10/2015 14:13:57-Comencem a enviar mail
+23/10/2015 14:13:57-resposta modem = AT+CMGS="+34686663429"
 > 
-06/10/2015 13:16:17-Res SMS = OK
-06/10/2015 13:16:17-AT+CMGL="REC UNREAD"OK
-06/10/2015 13:16:17-Response: Filtro finaliz.+CMGL: 1,"REC UNREAD","+34686663429",,"15/10/06,13:13:54+08"  Correus  PST        06/10/15 05:59Filtro #04/08Filtro finaliz.OKAT+CMGL="REC UNREAD"OK
-06/10/2015 13:16:17-txt.Phone = 686663429
-06/10/2015 13:16:17-txt.Name = Correus  PST
-06/10/2015 13:16:17-txt.DataHora = 06/10/2015 5:59:00
-06/10/2015 13:16:17-Enviant SMS al tlf: 686663429
-06/10/2015 13:16:17-Comencem a enviar SMS amb el text:   Correus  PST        06/10/15 05:59Filtro #04/08Filtro finaliz.Data recep. missatge: 06/10/2015 13:16:17
-06/10/2015 13:16:17-Resposta = 
-06/10/2015 13:16:17-Comencem a enviar mail
-06/10/2015 13:16:17-Enviant mail a : satradar@mcvsa.com
-06/10/2015 13:16:17-resposta modem = AT+CMGS="+34686663429"
+23/10/2015 14:13:57-Error mail: Value cannot be null.
+Parameter name: address-Missatge:   Port Vell PM2.5     13/10/15 00:06Filtro #04/13Filtro finaliz.Data recep. missatge: 23/10/2015 14:13:57-Receptors: 
+23/10/2015 14:13:59-Res SMS = OK
+23/10/2015 14:13:59-AT+CMGL="REC UNREAD"OK
+23/10/2015 14:13:59-Response: Filtro finaliz.OKAT+CMGL="REC UNREAD"OKAT+CMGL="REC UNREAD"OK
+23/10/2015 14:18:07-Comencem a enviar mail
+23/10/2015 14:18:07-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible incidència canvi de filtre - Falten: -1de13filtres-Receptors: 
+23/10/2015 14:18:10-Enviant SMS al tlf: 686663429
+23/10/2015 14:18:17-Comencem a enviar SMS amb el text: Captador - Possible incidència canvi de filtre - Falten: -1de13filtres
+23/10/2015 14:18:17-Resposta = 
+23/10/2015 14:18:18-resposta modem = AT+CMGS="+34686663429"
 > 
-06/10/2015 13:16:19-Res SMS = OK
-06/10/2015 13:16:19-AT+CMGL="REC UNREAD"OK
-06/10/2015 13:16:19-Response: Filtro finaliz.OKAT+CMGL="REC UNREAD"OKAT+CMGL="REC UNREAD"OK
-06/10/2015 13:16:55-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/06,13:15:58+08" ZAL-2 PM10CAV-A/MSb  31/07/15 12:32Filtro #01/15Mensaje de testOK
-06/10/2015 13:16:55-txt.Phone = 686663429
-06/10/2015 13:16:55-txt.Name = ZAL-2 PM10CAV-A/MSb
-06/10/2015 13:16:55-txt.DataHora = 31/07/2015 12:32:00
-06/10/2015 13:16:55-Enviant SMS al tlf: 686663429
-06/10/2015 13:16:55-Comencem a enviar SMS amb el text:  ZAL-2 PM10CAV-A/MSb  31/07/15 12:32Filtro #01/15Mensaje de testData recep. missatge: 06/10/2015 13:16:55
-06/10/2015 13:16:55-Resposta = 
-06/10/2015 13:16:55-resposta modem = AT+CMGS="+34686663429"
+23/10/2015 14:36:26-Obrint port
+23/10/2015 14:36:42-Enviant SMS al tlf: 686663429
+23/10/2015 14:36:42-Comencem a enviar SMS amb el text: Captador - Possible incidència canvi de filtre - Falten: -1de13filtres
+23/10/2015 14:36:42-Resposta = 
+23/10/2015 14:36:42-resposta modem = AT+CMGS="+34686663429"
 > 
-06/10/2015 13:16:55-Comencem a enviar mail
-06/10/2015 13:16:55-Enviant mail a : satradar@mcvsa.com
-06/10/2015 13:16:57-Res SMS = OK
-06/10/2015 13:16:57-AT+CMGL="REC UNREAD"OK
-06/10/2015 13:19:54-Obrint port
-06/10/2015 15:53:23-Obrint port
-13/10/2015 14:47:37-Obrint port
-13/10/2015 14:47:46-Error receiving OK-The operation has timed out.
-13/10/2015 14:47:46-& Error: AT+CMGL
-13/10/2015 14:47:53-Obrint port
-13/10/2015 14:49:46-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/13,14:49:17+08"Best PM10             13/10/15 00:04Filtro #04/15Filtro finaliz.OK
-13/10/2015 14:49:46-txt.Phone = 686663429
-13/10/2015 14:49:46-txt.Name = Best PM10
-13/10/2015 14:49:46-txt.DataHora = 13/10/2015 0:04:00
-13/10/2015 14:49:46-Enviant SMS al tlf: 686663429
-13/10/2015 14:49:46-Comencem a enviar SMS amb el text: Best PM10             13/10/15 00:04Filtro #04/15Filtro finaliz.Data recep. missatge: 13/10/2015 14:49:46
-13/10/2015 14:49:46-Resposta = 
-13/10/2015 14:49:46-resposta modem = AT+CMGS="+34686663429"
+23/10/2015 14:36:42-Comencem a enviar mail
+23/10/2015 14:36:42-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible incidència canvi de filtre - Falten: -1de13filtres-Receptors: 
+23/10/2015 14:36:55-Enviant SMS al tlf: 686663429
+23/10/2015 14:36:55-Comencem a enviar SMS amb el text: Captador - Possible incidència canvi de filtre - Falten: -1de13filtres
+23/10/2015 14:36:55-Resposta = 
+23/10/2015 14:36:55-resposta modem = AT+CMGS="+34686663429"
 > 
-13/10/2015 14:49:46-Comencem a enviar mail
-13/10/2015 14:49:46-Enviant mail a : satradar@mcvsa.com
-13/10/2015 14:49:47-Res SMS = OK
-13/10/2015 14:49:48-AT+CMGL="REC UNREAD"OK
-13/10/2015 14:51:05-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/13,14:50:37+08"  Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.OK
-13/10/2015 14:51:05-txt.Phone = 686663429
-13/10/2015 14:51:05-txt.Name = Port Vell PM2.5
-13/10/2015 14:51:05-txt.DataHora = 13/10/2015 0:06:00
-13/10/2015 14:53:20-Enviant SMS al tlf: 686663429
-13/10/2015 14:53:20-Comencem a enviar SMS amb el text:   Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.Data recep. missatge: 13/10/2015 14:51:05
-13/10/2015 14:53:20-Resposta = 
-13/10/2015 14:53:20-Comencem a enviar mail
-13/10/2015 14:53:20-Enviant mail a : satradar@mcvsa.com
-13/10/2015 14:53:20-resposta modem = AT+CMGS="+34686663429"
+23/10/2015 14:36:55-Comencem a enviar mail
+23/10/2015 14:36:55-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible incidència canvi de filtre - Falten: -1de13filtres-Receptors: 
+23/10/2015 14:37:42-Enviant SMS al tlf: 686663429
+23/10/2015 14:37:42-Comencem a enviar SMS amb el text: Captador - Possible incidència canvi de filtre - Falten: -1de13filtres
+23/10/2015 14:37:42-Resposta = 
+23/10/2015 14:37:42-resposta modem = AT+CMGS="+34686663429"
 > 
-13/10/2015 14:53:21-Res SMS = OK
-13/10/2015 14:53:21-AT+CMGL="REC UNREAD"OK
-13/10/2015 14:53:58-Obrint port
-13/10/2015 14:54:31-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/13,14:54:05+08"  Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.OK
-13/10/2015 14:54:31-txt.Phone = 686663429
-13/10/2015 14:54:31-txt.Name = Port Vell PM2.5
-13/10/2015 14:54:31-txt.DataHora = 13/10/2015 0:06:00
-13/10/2015 14:54:35-Enviant SMS al tlf: 686663429
-13/10/2015 14:54:35-Comencem a enviar SMS amb el text:   Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.Data recep. missatge: 13/10/2015 14:54:31
-13/10/2015 14:54:35-Resposta = 
-13/10/2015 14:54:35-Comencem a enviar mail
-13/10/2015 14:54:35-resposta modem = AT+CMGS="+34686663429"
+23/10/2015 14:37:42-Comencem a enviar mail
+23/10/2015 14:37:42-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible incidència canvi de filtre - Falten: -1de13filtres-Receptors: 
+23/10/2015 14:37:50-Enviant SMS al tlf: 686663429
+23/10/2015 14:37:50-Comencem a enviar SMS amb el text: Captador - Possible incidència canvi de filtre - Falten: -1de13filtres
+23/10/2015 14:37:50-Resposta = 
+23/10/2015 14:37:50-resposta modem = AT+CMGS="+34686663429"
 > 
-13/10/2015 14:54:35-Enviant mail a : satradar@mcvsa.com
-13/10/2015 14:54:37-Res SMS = OK
-13/10/2015 14:54:37-AT+CMGL="REC UNREAD"OK
-13/10/2015 14:55:39-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/13,14:55:12+08"  Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.OK
-13/10/2015 14:55:39-txt.Phone = 686663429
-13/10/2015 14:55:39-txt.Name = Port Vell PM2.5
-13/10/2015 14:55:39-txt.DataHora = 13/10/2015 0:06:00
-13/10/2015 14:57:51-Enviant SMS al tlf: 686663429
-13/10/2015 14:57:51-Comencem a enviar SMS amb el text:   Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.Data recep. missatge: 13/10/2015 14:55:39
-13/10/2015 14:57:51-Resposta = 
-13/10/2015 14:57:51-Comencem a enviar mail
-13/10/2015 14:57:51-Enviant mail a : satradar@mcvsa.com
-13/10/2015 14:57:51-resposta modem = AT+CMGS="+34686663429"
+23/10/2015 14:37:50-Comencem a enviar mail
+23/10/2015 14:37:50-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible incidència canvi de filtre - Falten: -1de13filtres-Receptors: 
+23/10/2015 14:37:59-Enviant SMS al tlf: 686663429
+23/10/2015 14:37:59-Comencem a enviar SMS amb el text: Captador - Possible incidència canvi de filtre - Falten: -1de13filtres
+23/10/2015 14:37:59-Resposta = 
+23/10/2015 14:37:59-Comencem a enviar mail
+23/10/2015 14:37:59-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible incidència canvi de filtre - Falten: -1de13filtres-Receptors: 
+23/10/2015 14:37:59-resposta modem = AT+CMGS="+34686663429"
 > 
-13/10/2015 14:57:53-Res SMS = OK
-13/10/2015 14:57:53-AT+CMGL="REC UNREAD"OK
-13/10/2015 14:58:48-Obrint port
-13/10/2015 14:59:05-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/13,14:58:38+08"  Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.OK
-13/10/2015 14:59:05-txt.Phone = 686663429
-13/10/2015 14:59:05-txt.Name = Port Vell PM2.5
-13/10/2015 14:59:05-txt.DataHora = 13/10/2015 0:06:00
-13/10/2015 15:01:05-Enviant SMS al tlf: 686663429
-13/10/2015 15:01:05-Comencem a enviar SMS amb el text:   Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.Data recep. missatge: 13/10/2015 14:59:05
-13/10/2015 15:01:05-Resposta = 
-13/10/2015 15:01:05-resposta modem = AT+CMGS="+34686663429"
+23/10/2015 14:38:07-Enviant SMS al tlf: 686663429
+23/10/2015 14:38:07-Comencem a enviar SMS amb el text: Captador - Possible incidència canvi de filtre - Falten: -1de13filtres
+23/10/2015 14:38:07-Resposta = 
+23/10/2015 14:38:07-Comencem a enviar mail
+23/10/2015 14:38:07-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible incidència canvi de filtre - Falten: -1de13filtres-Receptors: 
+23/10/2015 14:38:07-resposta modem = AT+CMGS="+34686663429"
 > 
-13/10/2015 15:01:05-Comencem a enviar mail
-13/10/2015 15:01:05-Enviant mail a : satradar@mcvsa.com
-13/10/2015 15:01:07-Res SMS = OK
-13/10/2015 15:01:07-AT+CMGL="REC UNREAD"OK
-13/10/2015 15:02:19-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/13,15:01:53+08"  Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.OK
-13/10/2015 15:02:19-txt.Phone = 686663429
-13/10/2015 15:02:19-txt.Name = Port Vell PM2.5
-13/10/2015 15:02:19-txt.DataHora = 13/10/2015 0:06:00
-13/10/2015 15:05:24-Comencem a enviar mail
-13/10/2015 15:05:24-Enviant mail a : satradar@mcvsa.com
-13/10/2015 15:05:31-Response: AT+CMGL="ALL"+CMGL: 1,"REC UNREAD","+34686663429",,"15/10/13,15:04:38+08"  Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.OK
-13/10/2015 15:05:31-txt.Phone = 686663429
-13/10/2015 15:05:31-txt.Name = Port Vell PM2.5
-13/10/2015 15:05:31-txt.DataHora = 13/10/2015 0:06:00
-13/10/2015 15:10:09-Obrint port
-13/10/2015 15:10:11-Response: AT+CMGL="ALL"+CMGL: 1,"REC READ","+34686663429",,"15/10/13,15:04:38+08"  Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.OK
-13/10/2015 15:10:11-txt.Phone = 686663429
-13/10/2015 15:10:11-txt.Name = Port Vell PM2.5
-13/10/2015 15:10:11-txt.DataHora = 13/10/2015 0:06:00
-13/10/2015 15:18:06-Obrint port
-13/10/2015 15:18:08-Response: AT+CMGL="ALL"+CMGL: 1,"REC READ","+34686663429",,"15/10/13,15:04:38+08"  Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.OK
-13/10/2015 15:18:08-txt.Phone = 686663429
-13/10/2015 15:18:08-txt.Name = Port Vell PM2.5
-13/10/2015 15:18:08-txt.DataHora = 13/10/2015 0:06:00
-13/10/2015 15:18:45-Obrint port
-13/10/2015 15:18:46-Response: AT+CMGL="ALL"+CMGL: 1,"REC READ","+34686663429",,"15/10/13,15:04:38+08"  Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.OK
-13/10/2015 15:18:46-txt.Phone = 686663429
-13/10/2015 15:18:46-txt.Name = Port Vell PM2.5
-13/10/2015 15:18:46-txt.DataHora = 13/10/2015 0:06:00
-13/10/2015 15:20:45-Obrint port
-13/10/2015 15:20:47-Response: AT+CMGL="ALL"+CMGL: 1,"REC READ","+34686663429",,"15/10/13,15:04:38+08"  Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.OK
-13/10/2015 15:20:47-txt.Phone = 686663429
-13/10/2015 15:20:47-txt.Name = Port Vell PM2.5
-13/10/2015 15:20:47-txt.DataHora = 13/10/2015 0:06:00
-13/10/2015 15:43:29-Obrint port
-13/10/2015 15:43:31-Response: AT+CMGL="ALL"+CMGL: 1,"REC READ","+34686663429",,"15/10/13,15:04:38+08"  Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.OK
-13/10/2015 15:43:31-txt.Phone = 686663429
-13/10/2015 15:43:31-txt.Name = Port Vell PM2.5
-13/10/2015 15:43:31-txt.DataHora = 13/10/2015 0:06:00
-13/10/2015 15:47:07-Obrint port
-13/10/2015 15:47:08-Response: AT+CMGL="ALL"+CMGL: 1,"REC READ","+34686663429",,"15/10/13,15:04:38+08"  Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.OK
-13/10/2015 15:47:08-txt.Phone = 686663429
-13/10/2015 15:47:08-txt.Name = Port Vell PM2.5
-13/10/2015 15:47:08-txt.DataHora = 13/10/2015 0:06:00
-13/10/2015 15:47:18-Comencem a enviar mail
-13/10/2015 15:47:18-Enviant mail a : satradar@mcvsa.com
-13/10/2015 15:47:33-Error mail: Failure sending mail.-Missatge:   Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.Data recep. missatge: 13/10/2015 15:47:08-Receptors: satradar@mcvsa.com
-13/10/2015 15:47:55-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/13,15:47:30+08" ZAL-2 PM10CAV-A/MSb  31/07/15 12:32Filtro #01/15Mensaje de testOK
-13/10/2015 15:47:55-txt.Phone = 686663429
-13/10/2015 15:47:55-txt.Name = ZAL-2 PM10CAV-A/MSb
-13/10/2015 15:47:55-txt.DataHora = 31/07/2015 12:32:00
-13/10/2015 15:48:52-Obrint port
-13/10/2015 15:48:54-Response: AT+CMGL="ALL"+CMGL: 0,"REC READ","+34686663429",,"15/10/13,15:47:30+08" ZAL-2 PM10CAV-A/MSb  31/07/15 12:32Filtro #01/15Mensaje de testOK
-13/10/2015 15:48:54-txt.Phone = 686663429
-13/10/2015 15:48:54-txt.Name = ZAL-2 PM10CAV-A/MSb
-13/10/2015 15:48:54-txt.DataHora = 31/07/2015 12:32:00
-13/10/2015 15:50:11-Comencem a enviar mail
-13/10/2015 15:50:11-Enviant mail a : satradar@mcvsa.com
-13/10/2015 16:02:21-Obrint port
-13/10/2015 16:02:58-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/13,16:02:30+08" ZAL-2 PM10CAV-A/MSb  31/07/15 12:32Filtro #01/15Mensaje de testOK
-13/10/2015 16:02:58-txt.Phone = 686663429
-13/10/2015 16:02:58-txt.Name = ZAL-2 PM10CAV-A/MSb
-13/10/2015 16:02:58-txt.DataHora = 31/07/2015 12:32:00
-13/10/2015 16:06:24-Obrint port
-13/10/2015 16:06:25-Response: AT+CMGL="ALL"+CMGL: 0,"REC READ","+34686663429",,"15/10/13,16:02:30+08" ZAL-2 PM10CAV-A/MSb  31/07/15 12:32Filtro #01/15Mensaje de testOK
-13/10/2015 16:06:25-txt.Phone = 686663429
-13/10/2015 16:06:25-txt.Name = ZAL-2 PM10CAV-A/MSb
-13/10/2015 16:06:25-txt.DataHora = 31/07/2015 12:32:00
-13/10/2015 16:06:36-Comencem a enviar mail
-13/10/2015 16:06:36-Enviant mail a : satradar@mcvsa.com
-13/10/2015 16:07:12-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/13,16:06:43+08"  Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.OK
-13/10/2015 16:07:12-txt.Phone = 686663429
-13/10/2015 16:07:12-txt.Name = Port Vell PM2.5
-13/10/2015 16:07:12-txt.DataHora = 13/10/2015 0:06:00
-13/10/2015 16:07:14-Comencem a enviar mail
-13/10/2015 16:07:14-Enviant mail a : satradar@mcvsa.com
-13/10/2015 16:07:43-Obrint port
-13/10/2015 16:08:11-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/13,16:07:44+08"  Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.OK
-13/10/2015 16:08:11-txt.Phone = 686663429
-13/10/2015 16:08:11-txt.Name = Port Vell PM2.5
-13/10/2015 16:08:11-txt.DataHora = 13/10/2015 0:06:00
-13/10/2015 16:08:40-Obrint port
-13/10/2015 16:08:41-Response: AT+CMGL="ALL"+CMGL: 0,"REC READ","+34686663429",,"15/10/13,16:07:44+08"  Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.OK
-13/10/2015 16:08:41-txt.Phone = 686663429
-13/10/2015 16:08:41-txt.Name = Port Vell PM2.5
-13/10/2015 16:08:41-txt.DataHora = 13/10/2015 0:06:00
-13/10/2015 16:10:40-Obrint port
-13/10/2015 16:10:41-Response: AT+CMGL="ALL"+CMGL: 0,"REC READ","+34686663429",,"15/10/13,16:07:44+08"  Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.OK
-13/10/2015 16:10:41-txt.Phone = 686663429
-13/10/2015 16:10:41-txt.Name = Port Vell PM2.5
-13/10/2015 16:10:41-txt.DataHora = 13/10/2015 0:06:00
-13/10/2015 16:11:17-Comencem a enviar mail
-13/10/2015 16:11:17-Enviant mail a : satradar@mcvsa.com
-13/10/2015 16:12:19-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/13,16:11:52+08"  Port Vell PM2.5     1/6/2015 00:06Filtro #04/15Filtro finaliz.OK
-13/10/2015 16:12:19-txt.Phone = 686663429
-13/10/2015 16:12:19-txt.Name = Port Vell PM2.5
-13/10/2015 16:12:19-txt.DataHora = 01/06/2015 0:06:00
-13/10/2015 16:12:36-Comencem a enviar mail
-13/10/2015 16:12:36-Enviant mail a : satradar@mcvsa.com
-13/10/2015 16:13:23-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/13,16:12:55+08"  Port Vell PM2.5     01/06/2015 00:06Filtro #04/15Filtro finaliz.OK
-13/10/2015 16:13:23-txt.Phone = 686663429
-13/10/2015 16:13:23-txt.Name = Port Vell PM2.5
-13/10/2015 16:13:23-txt.DataHora = 01/06/2015 0:06:00
-13/10/2015 16:13:42-Comencem a enviar mail
-13/10/2015 16:13:42-Enviant mail a : satradar@mcvsa.com
-13/10/2015 16:19:20-Obrint port
-13/10/2015 16:20:02-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/13,16:19:35+08"  Port Vell PM2.5     9/10/2015 00:06Filtro #04/15Filtro finaliz.OK
-13/10/2015 16:20:02-txt.Phone = 686663429
-13/10/2015 16:20:02-txt.Name = Port Vell PM2.5
-13/10/2015 16:20:27-txt.DataHora = 09/10/2015 0:06:00
-13/10/2015 16:21:54-Comencem a enviar mail
-13/10/2015 16:21:54-Enviant mail a : satradar@mcvsa.com
-13/10/2015 16:26:34-Obrint port
-13/10/2015 16:26:56-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/13,16:26:30+08"  Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.OK
-13/10/2015 16:26:56-txt.Phone = 686663429
-13/10/2015 16:26:56-txt.Name = Port Vell PM2.5
-13/10/2015 16:27:07-txt.DataHora = 13/10/2015 0:06:00
-13/10/2015 16:27:24-Comencem a enviar mail
-13/10/2015 16:27:24-Enviant mail a : satradar@mcvsa.com
-13/10/2015 16:35:09-Obrint port
-13/10/2015 16:36:11-Obrint port
-13/10/2015 16:38:38-Obrint port
-13/10/2015 16:44:53-Obrint port
-13/10/2015 16:45:36-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/13,16:45:09+08"  Port Vell PM2.5     13/10/14 00:06Filtro #05/34Filtro finaliz.OK
-13/10/2015 16:45:36-txt.Phone = 686663429
-13/10/2015 16:45:36-txt.Name = Port Vell PM2.5
-13/10/2015 16:45:36-txt.DataHora = 13/10/2014 0:06:00
-13/10/2015 16:45:36-Comencem a enviar mail
-13/10/2015 16:45:36-Enviant mail a : satradar@mcvsa.com
-13/10/2015 16:55:37-Obrint port
-13/10/2015 16:57:05-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/13,16:56:37+08"   Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.OK
-13/10/2015 16:57:05-txt.Phone = 686663429
-13/10/2015 16:57:05-txt.Name = Port Vell PM2.5
-13/10/2015 16:57:05-txt.DataHora = 13/10/2015 0:06:00
-13/10/2015 16:57:05-Comencem a enviar mail
-13/10/2015 16:57:05-Enviant mail a : satradar@mcvsa.com
-13/10/2015 16:57:45-Obrint port
-13/10/2015 16:58:02-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/13,16:57:38+08"  Port Vell PM2.5     13/10/15 00:06Filtro #04/15Filtro finaliz.OK
-13/10/2015 16:58:02-txt.Phone = 686663429
-13/10/2015 16:58:02-txt.Name = Port Vell PM2.5
-13/10/2015 16:58:02-txt.DataHora = 13/10/2015 0:06:00
-13/10/2015 16:58:02-Comencem a enviar mail
-13/10/2015 16:58:02-Enviant mail a : satradar@mcvsa.com
-14/10/2015 14:42:24-Obrint port
-14/10/2015 14:42:31-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/14,14:40:10+08"  Correus  PST        14/10/15 05:46Filtro #06/15Mensaje de testOK
-14/10/2015 14:42:31-txt.Phone = 686663429
-14/10/2015 14:42:32-txt.Name = Correus  PST
-14/10/2015 14:42:32-txt.DataHora = 14/10/2015 5:46:00
-14/10/2015 14:42:32-Comencem a enviar mail
-14/10/2015 14:42:32-Enviant mail a : satradar@mcvsa.com
-14/10/2015 14:44:24-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/14,14:43:58+08"  Correus  PST        14/10/15 05:46Filtro #06/15Mensaje de testOK
-14/10/2015 14:44:24-txt.Phone = 686663429
-14/10/2015 14:44:24-txt.Name = Correus  PST
-14/10/2015 14:44:24-txt.DataHora = 14/10/2015 5:46:00
-14/10/2015 14:46:10-Comencem a enviar mail
-14/10/2015 14:46:10-Enviant mail a : satradar@mcvsa.com
-14/10/2015 14:46:36-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/14,14:46:10+08"  Correus  PST        14/10/15 05:46Filtro #06/15Mensaje de testOK
-14/10/2015 14:46:36-txt.Phone = 686663429
-14/10/2015 14:46:36-txt.Name = Correus  PST
-14/10/2015 14:46:36-txt.DataHora = 14/10/2015 5:46:00
-14/10/2015 14:51:42-Comencem a enviar mail
-14/10/2015 14:51:42-Enviant mail a : satradar@mcvsa.com
-14/10/2015 14:52:23-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/14,14:51:57+08"  Correus  PST        14/10/15 05:46Filtro #06/15Mensaje de testOK
-14/10/2015 14:52:23-txt.Phone = 686663429
-14/10/2015 14:52:23-txt.Name = Correus  PST
-14/10/2015 14:52:23-txt.DataHora = 14/10/2015 5:46:00
-14/10/2015 14:53:25-Comencem a enviar mail
-14/10/2015 14:53:25-Enviant mail a : satradar@mcvsa.com
-14/10/2015 14:53:31-Response: AT+CMGL="ALL"+CMGL: 1,"REC UNREAD","+34686663429",,"15/10/14,14:53:01+08"  Correus  PST        14/10/15 05:46Filtro #06/15Mensaje de testOK
-14/10/2015 14:53:31-txt.Phone = 686663429
-14/10/2015 14:53:31-txt.Name = Correus  PST
-14/10/2015 14:53:31-txt.DataHora = 14/10/2015 5:46:00
-14/10/2015 14:53:44-Comencem a enviar mail
-14/10/2015 14:53:44-Enviant mail a : satradar@mcvsa.com
-14/10/2015 14:59:31-Obrint port
-14/10/2015 14:59:53-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/14,14:59:26+08"  Correus  PST        14/10/15 05:46Filtro #06/15Mensaje de testOK
-14/10/2015 14:59:53-txt.Phone = 686663429
-14/10/2015 14:59:53-txt.Name = Correus  PST
-14/10/2015 14:59:53-txt.DataHora = 14/10/2015 5:46:00
-14/10/2015 15:00:09-Comencem a enviar mail
-14/10/2015 15:00:09-Enviant mail a : satradar@mcvsa.com
-14/10/2015 15:00:35-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/14,15:00:06+08"  Correus  PST        14/10/15 05:46Filtro #06/15Mensaje de testOK
-14/10/2015 15:00:35-txt.Phone = 686663429
-14/10/2015 15:00:35-txt.Name = Correus  PST
-14/10/2015 15:00:35-txt.DataHora = 14/10/2015 5:46:00
-14/10/2015 15:01:34-Comencem a enviar mail
-14/10/2015 15:01:34-Enviant mail a : satradar@mcvsa.com
-14/10/2015 15:04:40-Obrint port
+23/10/2015 14:39:06-Comencem a enviar mail
+23/10/2015 14:39:06-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible incidència canvi de filtre - Falten: -1de13filtres-Receptors: 
+23/10/2015 14:39:11-Comencem a enviar mail
+23/10/2015 14:39:11-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible incidència canvi de filtre - Falten: -1de13filtres-Receptors: 
+23/10/2015 14:39:16-Comencem a enviar mail
+23/10/2015 14:39:16-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible incidència canvi de filtre - Falten: -1de13filtres-Receptors: 
+23/10/2015 14:39:21-Comencem a enviar mail
+23/10/2015 14:39:21-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible incidència canvi de filtre - Falten: -1de13filtres-Receptors: 
+23/10/2015 14:39:26-Comencem a enviar mail
+23/10/2015 14:39:26-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible incidència canvi de filtre - Falten: -1de13filtres-Receptors: 
+23/10/2015 14:39:31-Comencem a enviar mail
+23/10/2015 14:39:31-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible incidència canvi de filtre - Falten: -1de13filtres-Receptors: 
+23/10/2015 14:39:36-Comencem a enviar mail
+23/10/2015 14:39:36-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible incidència canvi de filtre - Falten: -1de13filtres-Receptors: 
+23/10/2015 14:39:41-Comencem a enviar mail
+23/10/2015 14:39:41-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible incidència canvi de filtre - Falten: -1de13filtres-Receptors: 
+23/10/2015 14:39:46-Comencem a enviar mail
+23/10/2015 14:39:46-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible incidència canvi de filtre - Falten: -1de13filtres-Receptors: 
+23/10/2015 14:39:51-Comencem a enviar mail
+23/10/2015 14:39:51-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible incidència canvi de filtre - Falten: -1de13filtres-Receptors: 
+23/10/2015 14:39:57-Comencem a enviar mail
+23/10/2015 14:39:57-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible incidència canvi de filtre - Falten: -1de13filtres-Receptors: 
+23/10/2015 14:40:02-Comencem a enviar mail
+23/10/2015 14:40:02-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible incidència canvi de filtre - Falten: -1de13filtres-Receptors: 
+23/10/2015 14:40:07-Comencem a enviar mail
+23/10/2015 14:40:07-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible incidència canvi de filtre - Falten: -1de13filtres-Receptors: 
+23/10/2015 14:40:12-Comencem a enviar mail
+23/10/2015 14:40:12-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible incidència canvi de filtre - Falten: -1de13filtres-Receptors: 
+23/10/2015 14:40:17-Comencem a enviar mail
+23/10/2015 14:40:17-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible incidència canvi de filtre - Falten: -1de13filtres-Receptors: 
+23/10/2015 14:40:22-Comencem a enviar mail
+23/10/2015 14:40:22-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible incidència canvi de filtre - Falten: -1de13filtres-Receptors: 
+23/10/2015 14:40:27-Comencem a enviar mail
+23/10/2015 14:40:27-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible incidència canvi de filtre - Falten: -1de13filtres-Receptors: 
+23/10/2015 14:40:32-Comencem a enviar mail
+23/10/2015 14:40:32-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible incidència canvi de filtre - Falten: -1de13filtres-Receptors: 
+23/10/2015 14:40:37-Comencem a enviar mail
+23/10/2015 14:40:37-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible incidència canvi de filtre - Falten: -1de13filtres-Receptors: 
+23/10/2015 14:40:42-Comencem a enviar mail
+23/10/2015 14:40:42-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible incidència canvi de filtre - Falten: -1de13filtres-Receptors: 
+23/10/2015 14:40:47-Comencem a enviar mail
+23/10/2015 14:40:47-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible incidència canvi de filtre - Falten: -1de13filtres-Receptors: 
+23/10/2015 14:40:52-Comencem a enviar mail
+23/10/2015 14:40:52-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible incidència canvi de filtre - Falten: -1de13filtres-Receptors: 
+23/10/2015 14:40:57-Comencem a enviar mail
+23/10/2015 14:40:57-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible incidència canvi de filtre - Falten: -1de13filtres-Receptors: 
+23/10/2015 14:41:02-Comencem a enviar mail
+23/10/2015 14:41:02-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible incidència canvi de filtre - Falten: -1de13filtres-Receptors: 
+23/10/2015 14:41:07-Comencem a enviar mail
+23/10/2015 14:41:07-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible incidència canvi de filtre - Falten: -1de13filtres-Receptors: 
+23/10/2015 14:41:13-Comencem a enviar mail
+23/10/2015 14:41:13-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible incidència canvi de filtre - Falten: -1de13filtres-Receptors: 
+23/10/2015 14:41:22-Comencem a enviar mail
+23/10/2015 14:41:27-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible incidència canvi de filtre - Falten: -1de13filtres-Receptors: 
+23/10/2015 14:41:34-Comencem a enviar mail
+23/10/2015 14:41:35-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible incidència canvi de filtre - Falten: -1de13filtres-Receptors: 
+23/10/2015 14:41:46-Comencem a enviar mail
+23/10/2015 14:41:46-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible incidència canvi de filtre - Falten: -1de13filtres-Receptors: 
+23/10/2015 14:41:59-Comencem a enviar mail
+23/10/2015 14:42:00-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible incidència canvi de filtre - Falten: -1de13filtres-Receptors: 
+23/10/2015 14:42:08-Comencem a enviar mail
+23/10/2015 14:42:08-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible incidència canvi de filtre - Falten: -1de13filtres-Receptors: 
+23/10/2015 14:42:13-Comencem a enviar mail
+23/10/2015 14:42:13-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible incidència canvi de filtre - Falten: -1de13filtres-Receptors: 
+23/10/2015 14:42:18-Comencem a enviar mail
+23/10/2015 14:42:19-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible incidència canvi de filtre - Falten: -1de13filtres-Receptors: 
+23/10/2015 14:42:24-Comencem a enviar mail
+23/10/2015 14:42:24-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible incidència canvi de filtre - Falten: -1de13filtres-Receptors: 
+26/10/2015 16:07:27-Obrint port
+26/10/2015 16:08:35-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/26,16:07:59+04"  Port Vell PM2.5     13/10/15 00:06Filtro #04/13Filtro finaliz.OK
+26/10/2015 16:08:35-txt.Phone = 686663429
+26/10/2015 16:08:35-txt.Name = Port Vell PM2.5
+26/10/2015 16:08:35-txt.DataHora = 13/10/2015 0:06:00
+26/10/2015 16:08:35-Comencem a enviar mail
+26/10/2015 16:08:35-Error mail: Value cannot be null.
+Parameter name: address-Missatge:   Port Vell PM2.5     13/10/15 00:06Filtro #04/13Filtro finaliz.Data recep. missatge: 26/10/2015 16:08:35-Receptors: 
+26/10/2015 16:11:18-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/26,16:10:46+04"  Port Vell PM2.5     13/10/15 00:06Filtro #04/13Filtro finaliz.OK
+26/10/2015 16:11:18-txt.Phone = 686663429
+26/10/2015 16:11:18-txt.Name = Port Vell PM2.5
+26/10/2015 16:11:18-txt.DataHora = 13/10/2015 0:06:00
+26/10/2015 16:11:18-Enviant SMS al tlf: 686663429
+26/10/2015 16:11:18-Comencem a enviar SMS amb el text:   Port Vell PM2.5     13/10/15 00:06Filtro #04/13Filtro finaliz.Data recep. missatge: 26/10/2015 16:11:18
+26/10/2015 16:11:18-Resposta = 
+26/10/2015 16:11:18-resposta modem = AT+CMGS="+34686663429"
+> 
+26/10/2015 16:11:18-Comencem a enviar mail
+26/10/2015 16:11:18-Error mail: Value cannot be null.
+Parameter name: address-Missatge:   Port Vell PM2.5     13/10/15 00:06Filtro #04/13Filtro finaliz.Data recep. missatge: 26/10/2015 16:11:18-Receptors: 
+26/10/2015 16:11:20-Res SMS = OK
+26/10/2015 16:11:20-AT+CMGL="REC UNREAD"OK
+26/10/2015 16:12:02-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/26,16:11:27+04"  Port Vell PM2.5     13/10/15 00:06Filtro #04/13Filtro finaliz.OK
+26/10/2015 16:12:02-txt.Phone = 686663429
+26/10/2015 16:12:02-txt.Name = Port Vell PM2.5
+26/10/2015 16:12:02-txt.DataHora = 13/10/2015 0:06:00
+26/10/2015 16:12:02-Enviant SMS al tlf: 686663429
+26/10/2015 16:12:02-Comencem a enviar SMS amb el text:   Port Vell PM2.5     13/10/15 00:06Filtro #04/13Filtro finaliz.Data recep. missatge: 26/10/2015 16:12:02
+26/10/2015 16:12:02-Resposta = 
+26/10/2015 16:12:02-Comencem a enviar mail
+26/10/2015 16:12:02-resposta modem = AT+CMGS="+34686663429"
+> 
+26/10/2015 16:12:02-Error mail: Value cannot be null.
+Parameter name: address-Missatge:   Port Vell PM2.5     13/10/15 00:06Filtro #04/13Filtro finaliz.Data recep. missatge: 26/10/2015 16:12:02-Receptors: 
+26/10/2015 16:12:03-Res SMS = OK
+26/10/2015 16:12:03-AT+CMGL="REC UNREAD"OK
+26/10/2015 16:15:06-Enviant SMS al tlf: 686663429
+26/10/2015 16:15:06-Comencem a enviar SMS amb el text: Captador - Possible problema canvi de filtre - Falten: -1de13filtres
+26/10/2015 16:15:06-Resposta = 
+26/10/2015 16:15:06-Comencem a enviar mail
+26/10/2015 16:15:06-resposta modem = AT+CMGS="+34686663429"
+> 
+26/10/2015 16:15:06-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible problema canvi de filtre - Falten: -1de13filtres-Receptors: 
+26/10/2015 16:24:43-Obrint port
+26/10/2015 16:24:49-Enviant SMS al tlf: 686663429
+26/10/2015 16:24:49-Comencem a enviar SMS amb el text: Captador - Possible problema canvi de filtre - Falten: -1de13filtres
+26/10/2015 16:24:49-Resposta = 
+26/10/2015 16:24:49-Comencem a enviar mail
+26/10/2015 16:24:49-resposta modem = AT+CMGS="+34686663429"
+> 
+26/10/2015 16:24:49-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible problema canvi de filtre - Falten: -1de13filtres-Receptors: 
+26/10/2015 16:25:52-Obrint port
+26/10/2015 16:25:58-Enviant SMS al tlf: 686663429
+26/10/2015 16:25:58-Comencem a enviar SMS amb el text: Captador - Possible problema canvi de filtre - Falten: -1de13filtres
+26/10/2015 16:25:58-Resposta = 
+26/10/2015 16:25:59-resposta modem = AT+CMGS="+34686663429"
+> 
+26/10/2015 16:25:59-Comencem a enviar mail
+26/10/2015 16:25:59-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible problema canvi de filtre - Falten: -1de13filtres-Receptors: 
+26/10/2015 16:26:41-Enviant SMS al tlf: 686663429
+26/10/2015 16:26:41-Comencem a enviar SMS amb el text: Captador - Possible problema canvi de filtre - Falten: -1de13filtres
+26/10/2015 16:26:41-Resposta = 
+26/10/2015 16:26:41-Comencem a enviar mail
+26/10/2015 16:26:41-resposta modem = AT+CMGS="+34686663429"
+> 
+26/10/2015 16:26:41-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible problema canvi de filtre - Falten: -1de13filtres-Receptors: 
+26/10/2015 16:27:07-Enviant SMS al tlf: 686663429
+26/10/2015 16:27:07-Comencem a enviar SMS amb el text: Captador - Possible problema canvi de filtre - Falten: -1de13filtres
+26/10/2015 16:27:07-Resposta = 
+26/10/2015 16:27:07-Comencem a enviar mail
+26/10/2015 16:27:07-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible problema canvi de filtre - Falten: -1de13filtres-Receptors: 
+26/10/2015 16:27:07-resposta modem = AT+CMGS="+34686663429"
+> 
+26/10/2015 16:36:35-Obrint port
+26/10/2015 16:37:16-Enviant SMS al tlf: 686663429
+26/10/2015 16:37:17-Comencem a enviar SMS amb el text: Captador - Possible problema canvi de filtre - Falten: -1de13filtres
+26/10/2015 16:37:17-Resposta = 
+26/10/2015 16:37:17-resposta modem = AT+CMGS="+34686663429"
+> 
+26/10/2015 16:37:17-Comencem a enviar mail
+26/10/2015 16:37:17-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible problema canvi de filtre - Falten: -1de13filtres-Receptors: 
+26/10/2015 16:38:49-Obrint port
+26/10/2015 16:39:06-Comencem a enviar mail
+26/10/2015 16:39:07-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible problema canvi de filtre - Falten: -1de13filtres-Receptors: 
+26/10/2015 16:39:08-Enviant SMS al tlf: 686663429
+26/10/2015 16:39:17-Comencem a enviar SMS amb el text: Captador - Possible problema canvi de filtre - Falten: -1de13filtres
+26/10/2015 16:39:17-Resposta = 
+26/10/2015 16:39:17-resposta modem = AT+CMGS="+34686663429"
+> 
+26/10/2015 16:42:10-Obrint port
+26/10/2015 16:42:19-Enviant SMS al tlf: 686663429
+26/10/2015 16:42:19-Comencem a enviar SMS amb el text: Captador - Possible problema canvi de filtre - Falten: -1de13filtres
+26/10/2015 16:42:19-Resposta = 
+26/10/2015 16:42:19-Comencem a enviar mail
+26/10/2015 16:42:19-resposta modem = AT+CMGS="+34686663429"
+> 
+26/10/2015 16:42:19-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible problema canvi de filtre - Falten: -1de13filtres-Receptors: 
+26/10/2015 16:44:08-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/26,16:43:34+04"  Port Vell PM2.5     13/10/15 00:06Filtro #04/13Filtro finaliz.OK
+26/10/2015 16:44:08-txt.Phone = 686663429
+26/10/2015 16:44:08-txt.Name = Port Vell PM2.5
+26/10/2015 16:44:08-txt.DataHora = 13/10/2015 0:06:00
+26/10/2015 16:45:15-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/26,16:44:44+04"  Port Vell PM2.5     13/10/15 00:06Filtro #04/13Filtro finaliz.OK
+26/10/2015 16:45:15-txt.Phone = 686663429
+26/10/2015 16:45:15-txt.Name = Port Vell PM2.5
+26/10/2015 16:45:15-txt.DataHora = 13/10/2015 0:06:00
+26/10/2015 16:48:33-Obrint port
+26/10/2015 16:48:42-Enviant SMS al tlf: 686663429
+26/10/2015 16:48:42-Comencem a enviar SMS amb el text: Captador - Possible problema canvi de filtre - Falten: -1de13filtres
+26/10/2015 16:48:42-Resposta = 
+26/10/2015 16:48:42-resposta modem = AT+CMGS="+34686663429"
+> 
+26/10/2015 16:48:42-Comencem a enviar mail
+26/10/2015 16:48:42-Error mail: Value cannot be null.
+Parameter name: address-Missatge: Possible problema canvi de filtre - Falten: -1de13filtres-Receptors: 
+26/10/2015 16:51:38-Obrint port
+28/10/2015 12:37:58-Comencem a enviar mail
+28/10/2015 12:37:58-Enviant mail a : satradar@mcvsa.com
+28/10/2015 12:39:28-Obrint port
+28/10/2015 12:39:40-Comencem a enviar mail
+28/10/2015 12:39:40-Enviant mail a : satradar@mcvsa.com
+28/10/2015 12:39:45-Comencem a enviar mail
+28/10/2015 12:39:45-Enviant mail a : satradar@mcvsa.com
+28/10/2015 12:39:50-Comencem a enviar mail
+28/10/2015 12:39:50-Enviant mail a : satradar@mcvsa.com
+28/10/2015 12:39:55-Comencem a enviar mail
+28/10/2015 12:39:55-Enviant mail a : satradar@mcvsa.com
+28/10/2015 12:40:00-Comencem a enviar mail
+28/10/2015 12:40:00-Enviant mail a : satradar@mcvsa.com
+28/10/2015 12:40:05-Comencem a enviar mail
+28/10/2015 12:40:05-Enviant mail a : satradar@mcvsa.com
+28/10/2015 12:40:11-Comencem a enviar mail
+28/10/2015 12:40:11-Enviant mail a : satradar@mcvsa.com
+28/10/2015 12:40:16-Comencem a enviar mail
+28/10/2015 12:40:16-Enviant mail a : satradar@mcvsa.com
+28/10/2015 12:40:21-Comencem a enviar mail
+28/10/2015 12:40:21-Enviant mail a : satradar@mcvsa.com
+28/10/2015 12:45:36-Obrint port
+28/10/2015 12:45:42-Comencem a enviar mail
+28/10/2015 12:45:42-Enviant mail a : satradar@mcvsa.com
+28/10/2015 12:45:47-Comencem a enviar mail
+28/10/2015 12:45:47-Enviant mail a : satradar@mcvsa.com
+28/10/2015 12:45:52-Comencem a enviar mail
+28/10/2015 12:45:52-Enviant mail a : satradar@mcvsa.com
+28/10/2015 12:45:58-Comencem a enviar mail
+28/10/2015 12:45:58-Enviant mail a : satradar@mcvsa.com
+28/10/2015 12:46:03-Comencem a enviar mail
+28/10/2015 12:46:03-Enviant mail a : satradar@mcvsa.com
+28/10/2015 12:46:08-Comencem a enviar mail
+28/10/2015 12:46:08-Enviant mail a : satradar@mcvsa.com
+28/10/2015 12:46:13-Comencem a enviar mail
+28/10/2015 12:46:13-Enviant mail a : satradar@mcvsa.com
+28/10/2015 12:46:18-Comencem a enviar mail
+28/10/2015 12:46:18-Enviant mail a : satradar@mcvsa.com
+28/10/2015 12:46:23-Comencem a enviar mail
+28/10/2015 12:46:23-Enviant mail a : satradar@mcvsa.com
+28/10/2015 12:46:28-Comencem a enviar mail
+28/10/2015 12:46:28-Enviant mail a : satradar@mcvsa.com
+28/10/2015 12:47:17-Obrint port
+28/10/2015 12:47:52-Comencem a enviar mail
+28/10/2015 12:47:52-Enviant mail a : satradar@mcvsa.com
+28/10/2015 12:51:52-Obrint port
+28/10/2015 12:52:01-Comencem a enviar mail
+28/10/2015 12:52:01-Enviant mail a : satradar@mcvsa.com
+28/10/2015 12:52:53-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/28,12:52:19+04"  Port Vell PM2.5     13/10/15 00:06Filtro #04/13Filtro finaliz.OK
+28/10/2015 12:52:53-txt.Phone = 686663429
+28/10/2015 12:52:53-txt.Name = Port Vell PM2.5
+28/10/2015 12:52:53-txt.DataHora = 13/10/2015 0:06:00
+28/10/2015 12:53:29-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/28,12:52:57+04"  Port Vell PM2.5     13/10/15 00:06Filtro #04/13Filtro finaliz.OK
+28/10/2015 12:53:29-txt.Phone = 686663429
+28/10/2015 12:53:29-txt.Name = Port Vell PM2.5
+28/10/2015 12:53:29-txt.DataHora = 13/10/2015 0:06:00
+28/10/2015 12:54:06-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/28,12:53:33+04"  Port Vell PM2.5     13/10/15 00:06Filtro #04/13Filtro finaliz.Data recep. missatge: 23/10/2015 14:13:57OK
+28/10/2015 12:54:06-txt.Phone = 686663429
+28/10/2015 12:54:06-txt.Name = Port Vell PM2.5
+28/10/2015 12:54:06-txt.DataHora = 13/10/2015 0:06:00
+28/10/2015 12:54:07-Response: Filtro finaliz.Data recep. missatge: 23/10/2015 14:13:57OK
+28/10/2015 12:54:28-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/28,12:53:55+04"  Port Vell PM2.5     13/10/15 00:06Filtro #04/13Filtro finaliz.OK
+28/10/2015 12:54:28-txt.Phone = 686663429
+28/10/2015 12:54:28-txt.Name = Port Vell PM2.5
+28/10/2015 12:54:28-txt.DataHora = 13/10/2015 0:06:00
+28/10/2015 12:54:44-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/28,12:54:12+04"  Port Vell PM2.5     13/10/15 00:06Filtro #04/13Filtro finaliz.OK
+28/10/2015 12:54:44-txt.Phone = 686663429
+28/10/2015 12:54:44-txt.Name = Port Vell PM2.5
+28/10/2015 12:54:44-txt.DataHora = 13/10/2015 0:06:00
+28/10/2015 12:59:42-Obrint port
+28/10/2015 13:02:26-Obrint port
+28/10/2015 13:03:51-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/28,13:03:16+04"  Port Vell PM2.5     13/10/15 00:06Filtro #04/13Filtro finaliz.OK
+28/10/2015 13:03:51-txt.Phone = 686663429
+28/10/2015 13:03:51-txt.Name = Port Vell PM2.5
+28/10/2015 13:03:51-txt.DataHora = 13/10/2015 0:06:00
+28/10/2015 13:04:18-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/28,13:03:43+04"  Port Vell PM2.5     13/10/15 00:06Filtro #04/13Filtro finaliz.OK
+28/10/2015 13:04:18-txt.Phone = 686663429
+28/10/2015 13:04:18-txt.Name = Port Vell PM2.5
+28/10/2015 13:04:18-txt.DataHora = 13/10/2015 0:06:00
+28/10/2015 13:04:18-Comencem a enviar mail
+28/10/2015 13:04:18-Enviant mail a : satradar@mcvsa.com
+28/10/2015 13:06:20-Comencem a enviar mail
+28/10/2015 13:06:20-Enviant mail a : satradar@mcvsa.com
+28/10/2015 14:11:28-Obrint port
+28/10/2015 14:11:35-Comencem a enviar mail
+28/10/2015 14:11:35-Enviant mail a : satradar@mcvsa.com
+28/10/2015 14:13:57-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/28,14:13:23+04"  Correus  PST        14/10/15 05:46Filtro #06/15Mensaje de testOK
+28/10/2015 14:13:57-txt.Phone = 686663429
+28/10/2015 14:13:57-txt.Name = Correus  PST
+28/10/2015 14:13:57-txt.DataHora = 14/10/2015 5:46:00
+28/10/2015 14:15:59-Comencem a enviar mail
+28/10/2015 14:15:59-Enviant mail a : satradar@mcvsa.com
+28/10/2015 14:56:41-Obrint port
+28/10/2015 14:56:52-Comencem a enviar mail
+28/10/2015 14:56:52-Enviant mail a : satradar@mcvsa.com
+28/10/2015 14:57:30-Obrint port
+28/10/2015 14:57:37-Comencem a enviar mail
+28/10/2015 14:57:37-Enviant mail a : satradar@mcvsa.com
+28/10/2015 14:57:47-Comencem a enviar mail
+28/10/2015 14:57:47-Enviant mail a : satradar@mcvsa.com
+28/10/2015 14:59:52-UpdateDataGridView Thread exception: Cannot access a disposed object.
+Object name: 'CCC'.
+28/10/2015 15:00:34-Obrint port
+28/10/2015 15:26:40-Obrint port
+28/10/2015 15:27:24-Obrint port
+28/10/2015 15:29:28-Obrint port
+28/10/2015 15:31:07-Obrint port
+28/10/2015 15:34:13-Obrint port
+28/10/2015 15:40:29-Obrint port
+28/10/2015 15:40:48-Comencem a enviar mail
+28/10/2015 15:40:48-Enviant mail a : satradar@mcvsa.com
+28/10/2015 15:42:07-Obrint port
+28/10/2015 15:42:22-Comencem a enviar mail
+28/10/2015 15:42:22-Enviant mail a : satradar@mcvsa.com
+28/10/2015 15:43:04-ChangeConnectSign Thread exception: Cannot access a disposed object.
+Object name: 'CCC'.
+28/10/2015 15:44:30-Obrint port
+28/10/2015 15:44:36-Comencem a enviar mail
+28/10/2015 15:44:36-Enviant mail a : satradar@mcvsa.com
+28/10/2015 15:44:47-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/28,15:44:14+04"  Correus  PST        14/10/15 05:46Filtro #06/15Mensaje de testOK
+28/10/2015 15:44:47-txt.Phone = 686663429
+28/10/2015 15:44:47-txt.Name = Correus  PST
+28/10/2015 15:44:47-txt.DataHora = 14/10/2015 5:46:00
+28/10/2015 16:00:25-Obrint port
+28/10/2015 16:56:07-Obrint port
+28/10/2015 17:00:47-Comencem a enviar mail
+28/10/2015 17:00:47-Enviant mail a : satradar@mcvsa.com
+29/10/2015 9:53:32-Obrint port
+29/10/2015 9:53:41-Error receiving OK-The operation has timed out.
+29/10/2015 9:53:41-& Error: AT+CMGL
+29/10/2015 9:53:45-Obrint port
+29/10/2015 9:53:51-Comencem a enviar mail
+29/10/2015 9:53:51-Enviant mail a : satradar@mcvsa.com
+29/10/2015 9:54:53-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/29,09:53:00+04"  Port Vell PM2.5     13/10/15 00:06Filtro #04/13Filtro finaliz.OK
+29/10/2015 9:54:53-txt.Phone = 686663429
+29/10/2015 9:54:53-txt.Name = Port Vell PM2.5
+29/10/2015 9:54:53-txt.DataHora = 13/10/2015 0:06:00
+29/10/2015 9:54:53-Comencem a enviar mail
+29/10/2015 9:54:53-Enviant mail a : satradar@mcvsa.com
+29/10/2015 9:55:04-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/29,09:54:28+04"  Port Vell PM2.5     13/10/15 00:06Filtro #04/13Filtro finaliz.OK
+29/10/2015 9:55:04-txt.Phone = 686663429
+29/10/2015 9:55:04-txt.Name = Port Vell PM2.5
+29/10/2015 9:55:04-txt.DataHora = 13/10/2015 0:06:00
+29/10/2015 9:55:04-Comencem a enviar mail
+29/10/2015 9:55:04-Enviant mail a : satradar@mcvsa.com
+29/10/2015 9:56:10-Obrint port
+29/10/2015 9:56:42-Obrint port
+29/10/2015 9:57:19-Obrint port
+29/10/2015 9:58:10-Obrint port
+29/10/2015 9:59:13-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/29,09:58:37+04"  Correus  PST        14/10/15 05:46Filtro #06/15Mensaje de testOK
+29/10/2015 9:59:13-txt.Phone = 686663429
+29/10/2015 9:59:13-txt.Name = Correus  PST
+29/10/2015 9:59:13-txt.DataHora = 14/10/2015 5:46:00
+29/10/2015 9:59:13-Comencem a enviar mail
+29/10/2015 9:59:13-Enviant mail a : satradar@mcvsa.com
+29/10/2015 10:38:54-Obrint port
+29/10/2015 10:42:18-Obrint port
+29/10/2015 10:47:05-Obrint port
+29/10/2015 10:51:33-Obrint port
+29/10/2015 10:52:20-Obrint port
+29/10/2015 10:59:52-Obrint port
+29/10/2015 11:00:20-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/29,10:59:46+04"  Correus  PST        14/10/15 05:46Filtro #06/15Mensaje de testOK
+29/10/2015 11:00:20-txt.Phone = 686663429
+29/10/2015 11:00:20-txt.Name = Correus  PST
+29/10/2015 11:00:20-txt.DataHora = 14/10/2015 5:46:00
+29/10/2015 11:00:20-Comencem a enviar mail
+29/10/2015 11:00:20-Enviant mail a : satradar@mcvsa.com
+29/10/2015 11:01:13-Obrint port

@@ -36,7 +36,6 @@ Partial Class CCC
         Me.TBoxHistoric = New System.Windows.Forms.TextBox()
         Me.SerialPort1 = New System.IO.Ports.SerialPort(Me.components)
         Me.GBoxSetup = New System.Windows.Forms.GroupBox()
-        Me.CboxActivar = New System.Windows.Forms.CheckBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GBoxAdd = New System.Windows.Forms.GroupBox()
         Me.BtAlertes = New System.Windows.Forms.Button()
@@ -160,7 +159,6 @@ Partial Class CCC
         'GBoxSetup
         '
         Me.GBoxSetup.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GBoxSetup.Controls.Add(Me.CboxActivar)
         Me.GBoxSetup.Controls.Add(Me.PictureBox1)
         Me.GBoxSetup.Controls.Add(Me.BtTelefon)
         Me.GBoxSetup.Controls.Add(Me.TBoxTelefon)
@@ -172,18 +170,6 @@ Partial Class CCC
         Me.GBoxSetup.Size = New System.Drawing.Size(308, 180)
         Me.GBoxSetup.TabIndex = 19
         Me.GBoxSetup.TabStop = False
-        '
-        'CboxActivar
-        '
-        Me.CboxActivar.AutoSize = True
-        Me.HelpProvider1.SetHelpString(Me.CboxActivar, "Si no voleu que un dispositiu mostri més alarmes desactiveu aquesta casella")
-        Me.CboxActivar.Location = New System.Drawing.Point(6, 125)
-        Me.CboxActivar.Name = "CboxActivar"
-        Me.HelpProvider1.SetShowHelp(Me.CboxActivar, True)
-        Me.CboxActivar.Size = New System.Drawing.Size(112, 17)
-        Me.CboxActivar.TabIndex = 14
-        Me.CboxActivar.Text = "Alarmes activades"
-        Me.CboxActivar.UseVisualStyleBackColor = True
         '
         'PictureBox1
         '
@@ -321,7 +307,7 @@ Partial Class CCC
         Me.Controls.Add(Me.GBoxLVLastMessages)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "CCC"
-        Me.Text = "CentreControlCaptadors (CCC.beta)"
+        Me.Text = "CentreControlCaptadors 2.0"
         Me.GBoxSetup.ResumeLayout(False)
         Me.GBoxSetup.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -353,7 +339,6 @@ Partial Class CCC
     Friend WithEvents LbConnect As System.Windows.Forms.Label
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents DataGridView As System.Windows.Forms.DataGridView
-    Friend WithEvents CboxActivar As System.Windows.Forms.CheckBox
     Friend WithEvents GBoxTBoxHistoric As System.Windows.Forms.GroupBox
     Friend WithEvents GBoxLVLastMessages As System.Windows.Forms.GroupBox
     Friend WithEvents HelpProvider1 As System.Windows.Forms.HelpProvider

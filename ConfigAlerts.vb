@@ -249,5 +249,51 @@ Public Class ConfigAlerts
         JsonFile.setAssignedUser(devices, id)
 
     End Sub
+
+    Private Sub BtConfigureCycle_Click(sender As Object, e As EventArgs) Handles BtConfigureCycle.Click
+        If CkLBCaptadors.CheckedItems.Count > 0 Then
+            ConfigCycle.ShowDialog(Me)
+        End If
+    End Sub
+
+    Sub ConfigureAutoAlarm(ByVal filterDuration As Integer)
+        'Configure auto-alarm in the devices.
+        'If filterDuration = 0: autoalarm will be deactivated
+
+        Dim devices As New List(Of String)
+        Dim device As String
+
+        For Each device In CkLBCaptadors.CheckedItems
+            devices.Add(device)
+        Next
+
+        JsonFile.setCycleParams(devices, filterDuration)
+        ShowDuration()
+
+    End Sub
+
+    Private Sub CkLBCaptadors_SelectedIndexChanged(sender As Object, e As EventArgs) Handles CkLBCaptadors.SelectedIndexChanged
+        'En clicar sobre un captador mostrarem la seva configuració dels filtres
+
+        ShowDuration()
+
+    End Sub
+
+    Sub ShowDuration()
+        'En clicar sobre un captador mostrarem la seva configuració dels filtres
+
+        Dim index As Integer = CCC.buscaCaptador(CkLBCaptadors.SelectedItem)
+        If index >= 0 Then
+            Dim duration As Integer = CCC.json.devices(index).filterDuration
+            If duration = 0 Then
+                LbInfoCanviFiltre.Text = "Sense configuració"
+            Else
+                LbInfoCanviFiltre.Text = ("Filtres de " & duration & " hores")
+            End If
+        End If
+
+    End Sub
+
 End Class
+
 

@@ -1,0 +1,15 @@
+﻿15/10/2015 15:08:08-System.IO.FileNotFoundException: Could not find file 'C:\Users\radar\Documents\Visual Studio 2013\Projects\CentreControlCaptadors\CentreControlCaptadors\bin\Release\resources\settings.json'.
+File name: 'C:\Users\radar\Documents\Visual Studio 2013\Projects\CentreControlCaptadors\CentreControlCaptadors\bin\Release\resources\settings.json'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   at System.IO.File.ReadAllText(String path)
+   at Microsoft.VisualBasic.MyServices.FileSystemProxy.ReadAllText(String file)
+   at CentreControlCaptadors.JsonFile.updateJsonVar() in C:\Users\radar\Documents\Visual Studio 2013\Projects\CentreControlCaptadors\CentreControlCaptadors\CentreControlCaptadors.vb:line 1343
+15/10/2015 15:08:18-Obrint port
+15/10/2015 15:09:06-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/10/15,15:08:37+08"   Darsena Sud PM10    15/10/15 00:04Filtro #06/15Filtro finaliz.OK
+15/10/2015 15:09:06-txt.Phone = 686663429
+15/10/2015 15:09:06-txt.Name = Darsena Sud PM10
+15/10/2015 15:09:06-txt.DataHora = 15/10/2015 0:04:00
