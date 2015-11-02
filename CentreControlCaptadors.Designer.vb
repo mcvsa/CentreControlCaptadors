@@ -148,6 +148,7 @@ Partial Class CCC
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TBoxHistoric.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.TBoxHistoric.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TBoxHistoric.Location = New System.Drawing.Point(6, 17)
         Me.TBoxHistoric.Multiline = True
         Me.TBoxHistoric.Name = "TBoxHistoric"
@@ -238,16 +239,16 @@ Partial Class CCC
         '
         Me.LVLastMessages.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.LVLastMessages.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LVLastMessages.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LVLastMessages.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None
         Me.LVLastMessages.Location = New System.Drawing.Point(6, 17)
         Me.LVLastMessages.MultiSelect = False
         Me.LVLastMessages.Name = "LVLastMessages"
         Me.LVLastMessages.Size = New System.Drawing.Size(745, 156)
         Me.LVLastMessages.TabIndex = 23
-        Me.LVLastMessages.TileSize = New System.Drawing.Size(345, 30)
+        Me.LVLastMessages.TileSize = New System.Drawing.Size(720, 20)
         Me.LVLastMessages.UseCompatibleStateImageBehavior = False
-        Me.LVLastMessages.View = System.Windows.Forms.View.List
+        Me.LVLastMessages.View = System.Windows.Forms.View.Tile
         '
         'DataGridView
         '
