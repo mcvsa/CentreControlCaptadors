@@ -13,3 +13,18 @@
 04/11/2015 10:02:37-txt.DataHora = 14/10/2015 5:46:00
 04/11/2015 10:02:54-Error mail: Failure sending mail.-Missatge: Possible problema canvi de filtre - Falten: 4 de 8 filtres-Receptors: joaquim.cortes@portdebarcelona.cat
 04/11/2015 10:02:56-Error mail: Failure sending mail.-Missatge: Possible problema canvi de filtre - Falten: 4 de 8 filtres-Receptors: joaquim.cortes@portdebarcelona.cat
+05/11/2015 11:34:41-Obrint port
+05/11/2015 11:34:50-Error receiving OK-The operation has timed out.
+05/11/2015 11:34:50-& Error: AT+CMGL
+05/11/2015 11:34:53-Obrint port
+05/11/2015 11:35:03-Error receiving OK-The operation has timed out.
+05/11/2015 11:35:03-& Error: AT+CMGL
+05/11/2015 11:35:08-Obrint port
+05/11/2015 11:35:23-ThreadSMS not dying!
+05/11/2015 11:35:23-Obrint port
+05/11/2015 11:35:35-Enviant SMS al tlf: 686663429
+05/11/2015 11:35:35-Comencem a enviar SMS amb el text: Missatge de prova
+05/11/2015 11:35:35-Resposta = 
+05/11/2015 11:35:35-resposta modem = AT+CMGS="+34686663429"
+> 
+05/11/2015 11:35:43-Obrint port

@@ -1239,8 +1239,8 @@ Public Class Captador
     Public Actiu As Boolean = False
     Public LastMessage As String = ""
     Public LastState As String = ""
-    Public alarmMail As Boolean = False
-    Public alarmSMS As Boolean = False
+    Public alarmMail As Boolean = False 'No serveix per a res ara mateix
+    Public alarmSMS As Boolean = False 'No serveix per a res ara mateix
     Public UsersList As New List(Of Integer)
     Public ReceptionDate As String = ""
     Public lastMessageStatus As String = ""
