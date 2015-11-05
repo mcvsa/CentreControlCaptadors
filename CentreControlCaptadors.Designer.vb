@@ -308,7 +308,7 @@ Partial Class CCC
         Me.Controls.Add(Me.GBoxLVLastMessages)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "CCC"
-        Me.Text = "CentreControlCaptadors 2.0"
+        Me.Text = "CentreControlCaptadors 2.2"
         Me.GBoxSetup.ResumeLayout(False)
         Me.GBoxSetup.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

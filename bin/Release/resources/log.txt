@@ -13,3 +13,29 @@ File name: 'C:\Users\radar\Documents\Visual Studio 2013\Projects\CentreControlCa
 15/10/2015 15:09:06-txt.Phone = 686663429
 15/10/2015 15:09:06-txt.Name = Darsena Sud PM10
 15/10/2015 15:09:06-txt.DataHora = 15/10/2015 0:04:00
+03/11/2015 14:58:34-Obrint port
+03/11/2015 14:58:44-Error receiving OK-The operation has timed out.
+03/11/2015 14:58:44-& Error: AT+CMGL
+03/11/2015 14:58:46-Obrint port
+03/11/2015 14:59:18-Obrint port
+03/11/2015 15:00:00-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/11/03,14:59:21+04"  Port Vell PM2.5     13/10/15 00:06Filtro #04/13Filtro finaliz.OK
+03/11/2015 15:00:00-txt.Phone = 686663429
+03/11/2015 15:00:00-txt.Name = Port Vell PM2.5
+03/11/2015 15:00:00-txt.DataHora = 13/10/2015 0:06:00
+03/11/2015 15:03:00-Obrint port
+03/11/2015 15:03:33-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/11/03,15:02:56+04"  Port Vell PM2.5     13/10/15 00:06Filtro #04/13Filtro finaliz.OK
+03/11/2015 15:03:33-txt.Phone = 686663429
+03/11/2015 15:03:33-txt.Name = Port Vell PM2.5
+03/11/2015 15:03:33-txt.DataHora = 13/10/2015 0:06:00
+03/11/2015 15:10:54-Obrint port
+03/11/2015 15:11:17-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/11/03,15:10:38+04"  Port Vell PM2.5     13/10/15 00:06Filtro #04/13Filtro finaliz.OK
+03/11/2015 15:11:17-txt.Phone = 686663429
+03/11/2015 15:11:17-txt.Name = Port Vell PM2.5
+03/11/2015 15:11:17-txt.DataHora = 13/10/2015 0:06:00
+03/11/2015 15:12:33-Obrint port
+03/11/2015 15:12:55-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/11/03,15:12:17+04"  Port Vell PM2.5     13/10/15 00:06Filtro #04/13Filtro finaliz.OK
+03/11/2015 15:12:55-txt.Phone = 686663429
+03/11/2015 15:12:55-txt.Name = Port Vell PM2.5
+03/11/2015 15:12:55-txt.DataHora = 13/10/2015 0:06:00
+03/11/2015 15:14:18-Obrint port
+03/11/2015 15:58:36-Obrint port

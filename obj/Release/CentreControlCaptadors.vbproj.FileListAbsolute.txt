@@ -12,4 +12,3 @@ C:\Users\radar\Documents\Visual Studio 2013\Projects\CentreControlCaptadors\Cent
 C:\Users\radar\Documents\Visual Studio 2013\Projects\CentreControlCaptadors\CentreControlCaptadors\obj\Release\CentreControlCaptadors.pdb
 C:\Users\radar\Documents\Visual Studio 2013\Projects\CentreControlCaptadors\CentreControlCaptadors\obj\Release\CentreControlCaptadors.ConfigAlerts.resources
 C:\Users\radar\Documents\Visual Studio 2013\Projects\CentreControlCaptadors\CentreControlCaptadors\obj\Release\CentreControlCaptadors.ConfigCycle.resources
-C:\Users\radar\Documents\Visual Studio 2013\Projects\CentreControlCaptadors\CentreControlCaptadors\obj\Release\CentreControlCaptadors.vbprojResolveAssemblyReference.cache

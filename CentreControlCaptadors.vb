@@ -414,42 +414,33 @@ Public Class CCC
     Function OpenningPort(ByRef port As String) As String
         'Funció per a connectar al mòdem série
         Dim cont As Integer = 0
+
         connectStablished = False
+
         Cursor = System.Windows.Forms.Cursors.WaitCursor
-        While (threadSMSON)
-            Thread.Sleep(1000)
-            cont += 1
-            If cont >= 10 Then
-                Exit While
+
+        ChangeConnectSign(-1)
+
+        Dim res = SMSConfiguration.openPort(port, SerialPort1)
+
+        Dim reset = SMSConfiguration.resetModem(SerialPort1)
+
+        If res = "OK" And reset = "OK" Then
+            connectStablished = True
+            ChangeConnectSign(0)
+            json.comPort = port
+            IOTextFiles.updateJsonFile(json)
+
+            Dim threadSMS As New Thread(AddressOf SMSWorker)
+            If Not threadSMS.IsAlive Then
+                threadSMS.Start()
+                threadSMSON = True
             End If
-        End While
-        If Not threadSMSON Then
-            ChangeConnectSign(-1)
-
-            Dim res = SMSConfiguration.openPort(port, SerialPort1)
-
-            Dim reset = SMSConfiguration.resetModem(SerialPort1)
-
-            If res = "OK" And reset = "OK" Then
-                connectStablished = True
-                ChangeConnectSign(0)
-                json.comPort = port
-                IOTextFiles.updateJsonFile(json)
-
-                Dim threadSMS As New Thread(AddressOf SMSWorker)
-                If Not threadSMS.IsAlive Then
-                    threadSMS.Start()
-                    threadSMSON = True
-                End If
-                OpenningPort = vbOK
-            Else
-                OpenningPort = "Obrint port: " & res & " - " & "Reset port: " & reset
-                connectStablished = False
-                Cursor = System.Windows.Forms.Cursors.Default
-            End If
+            OpenningPort = vbOK
         Else
-            OpenningPort = "Error desconnectant el port"
-            Close()
+            OpenningPort = "Obrint port: " & res & " - " & "Reset port: " & reset
+            connectStablished = False
+            Cursor = System.Windows.Forms.Cursors.Default
         End If
 
     End Function
@@ -876,7 +867,7 @@ Public Class CCC
                         End If
                     End If
 
-                    txt.Body = returnstr.Substring(0, indexa)
+                    txt.Body = returnstr.Substring(0, indexa - 1) 'El -1 és per evitar el vbCr
 
                     txt.AllMessage = ashole & vbCr & "Data recep. missatge: " & txt.DataRx
                     'Apuntem les dades corresponents al captador que toqui
@@ -893,7 +884,8 @@ Public Class CCC
                         UpdateLastData()
 
                         If indexCaptador >= 0 Then
-                            json.devices(indexCaptador).addData(SMSText.Form(txt))
+                            Dim dates As String = "Rebut: " & DateTime.Now.ToString()
+                            json.devices(indexCaptador).addData(SMSText.Form(txt) & ", " & dates & vbCr)
 
                             'Si el captador està seleccionat mostrarem l'historial actualitzat
                             'If DataGridView.CurrentRow.Index <> Nothing Then
@@ -1377,7 +1369,7 @@ Public Class SMSText
         Dim auxArray() As String
 
         auxArray = line.Split(",")
-        If auxArray.Count = 5 Then
+        If auxArray.Count = 6 Then
 
             txt.DataHora = auxArray(0).Trim
             txt.Name = auxArray(1).Trim
