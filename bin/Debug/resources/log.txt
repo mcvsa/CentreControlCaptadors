@@ -28,3 +28,172 @@
 05/11/2015 11:35:35-resposta modem = AT+CMGS="+34686663429"
 > 
 05/11/2015 11:35:43-Obrint port
+10/11/2015 11:07:44-Obrint port
+10/11/2015 11:07:46-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/11/10,11:07:04+04"   Port Vell PM2.5     13/10/15 00:06Filtro #04/13Filtro finaliz.OK
+10/11/2015 11:07:46-txt.Phone = 686663429
+10/11/2015 11:07:46-txt.Name = Port Vell PM2.5
+10/11/2015 11:07:46-txt.DataHora = 13/10/2015 0:06:00
+10/11/2015 11:07:46-Enviant SMS al tlf: 686663429
+10/11/2015 11:07:46-Comencem a enviar SMS amb el text:    Port Vell PM2.5     13/10/15 00:06Filtro #04/13Filtro finaliz.Data recep. missatge: 10/11/2015 11:07:46
+10/11/2015 11:07:46-Resposta = 
+10/11/2015 11:07:46-resposta modem = AT+CMGS="+34686663429"
+> 
+10/11/2015 11:07:46-Comencem a enviar mail
+10/11/2015 11:07:46-Enviant mail a : satradar@mcvsa.com
+10/11/2015 11:07:48-Res SMS = OK
+10/11/2015 11:07:48-AT+CMGL="REC UNREAD"OK
+10/11/2015 11:08:07-Error mail: Failure sending mail.-Missatge:    Port Vell PM2.5     13/10/15 00:06Filtro #04/13Filtro finaliz.Data recep. missatge: 10/11/2015 11:07:46-Receptors: satradar@mcvsa.com
+10/11/2015 12:23:47-Enviant SMS al tlf: 686663429
+10/11/2015 12:23:47-Comencem a enviar SMS amb el text: Captador MCV - Possible problema canvi de filtre - Falten: 9 de 13 filtres
+10/11/2015 12:23:47-Resposta = 
+10/11/2015 12:23:47-resposta modem = AT+CMGS="+34686663429"
+> 
+10/11/2015 12:23:49-Comencem a enviar mail
+10/11/2015 12:23:49-Enviant mail a : satradar@mcvsa.com
+10/11/2015 12:24:10-Error mail: Failure sending mail.-Missatge: Possible problema canvi de filtre - Falten: 9 de 13 filtres-Receptors: satradar@mcvsa.com
+10/11/2015 12:31:57-Obrint port
+10/11/2015 12:32:03-Enviant SMS al tlf: 686663429
+10/11/2015 12:32:03-Comencem a enviar SMS amb el text: Captador MCV - Possible problema canvi de filtre - Falten: 9 de 13 filtres
+10/11/2015 12:32:03-Resposta = 
+10/11/2015 12:32:03-resposta modem = AT+CMGS="+34686663429"
+> 
+10/11/2015 12:32:05-Comencem a enviar mail
+10/11/2015 12:32:05-Enviant mail a : satradar@mcvsa.com
+10/11/2015 12:32:26-Error mail: Failure sending mail.-Missatge: Possible problema canvi de filtre - Falten: 9 de 13 filtres-Receptors: satradar@mcvsa.com
+10/11/2015 12:35:44-Obrint port
+10/11/2015 12:35:51-Enviant SMS al tlf: 686663429
+10/11/2015 12:35:51-Comencem a enviar SMS amb el text: Captador MCV - Possible problema canvi de filtre - Falten: 9 de 13 filtres
+10/11/2015 12:35:51-Resposta = 
+10/11/2015 12:35:51-resposta modem = AT+CMGS="+34686663429"
+> 
+10/11/2015 12:35:53-Comencem a enviar mail
+10/11/2015 12:35:53-Enviant mail a : satradar@mcvsa.com
+10/11/2015 12:36:14-Error mail: Failure sending mail.-Missatge: Possible problema canvi de filtre - Falten: 9 de 13 filtres-Receptors: satradar@mcvsa.com
+10/11/2015 12:36:19-Obrint port
+10/11/2015 12:36:25-Enviant SMS al tlf: 686663429
+10/11/2015 12:36:25-Comencem a enviar SMS amb el text: Captador MCV - Possible problema canvi de filtre - Falten: 9 de 13 filtres
+10/11/2015 12:36:25-Resposta = 
+10/11/2015 12:36:25-resposta modem = AT+CMGS="+34686663429"
+> 
+10/11/2015 12:36:27-Comencem a enviar mail
+10/11/2015 12:36:27-Enviant mail a : satradar@mcvsa.com
+10/11/2015 12:36:48-Error mail: Failure sending mail.-Missatge: Possible problema canvi de filtre - Falten: 9 de 13 filtres-Receptors: satradar@mcvsa.com
+10/11/2015 12:42:39-Obrint port
+10/11/2015 12:43:19-Obrint port
+10/11/2015 12:43:47-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/11/10,12:43:05+04"  Port Vell PM2.5     13/10/15 00:06Filtro #04/13Filtro finaliz.OK
+10/11/2015 12:43:47-txt.Phone = 686663429
+10/11/2015 12:43:47-txt.Name = Port Vell PM2.5
+10/11/2015 12:43:47-txt.DataHora = 13/10/2015 0:06:00
+10/11/2015 12:43:47-Comencem a enviar mail
+10/11/2015 12:43:47-Enviant mail a : satradar@mcvsa.com
+10/11/2015 12:44:08-Error mail: Failure sending mail.-Missatge:   Port Vell PM2.5     13/10/15 00:06Filtro #04/13Filtro finaliz.Data recep. missatge: 10/11/2015 12:43:47-Receptors: satradar@mcvsa.com
+10/11/2015 12:45:58-Obrint port
+10/11/2015 12:47:54-Obrint port
+10/11/2015 12:48:53-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/11/10,12:48:13+04"  Port Vell PM2.5     13/10/15 00:06Filtro #04/13Filtro finaliz.OK
+10/11/2015 12:48:53-txt.Phone = 686663429
+10/11/2015 12:48:53-txt.Name = Port Vell PM2.5
+10/11/2015 12:48:53-txt.DataHora = 13/10/2015 0:06:00
+10/11/2015 12:48:53-Comencem a enviar mail
+10/11/2015 12:48:53-Enviant mail a : satradar@mcvsa.com
+10/11/2015 12:49:15-Error mail: Failure sending mail.-Missatge:   Port Vell PM2.5     13/10/15 00:06Filtro #04/13Filtro finaliz.Data recep. missatge: 10/11/2015 12:48:53-Receptors: satradar@mcvsa.com
+10/11/2015 12:50:46-Error sending: AT+CMGL="ALL"-Uno de los dispositivos conectados al sistema no funciona.
+
+10/11/2015 12:50:46-Error receiving OK-Uno de los dispositivos conectados al sistema no funciona.
+
+10/11/2015 12:50:46-& Error: AT+CMGL
+10/11/2015 12:53:42-Obrint port
+10/11/2015 12:53:51-Error receiving OK-The operation has timed out.
+10/11/2015 12:53:51-& Error: AT+CMGL
+10/11/2015 12:53:54-Obrint port
+10/11/2015 12:54:00-Enviant SMS al tlf: 686663429
+10/11/2015 12:54:00-Comencem a enviar SMS amb el text: Captador MCV - Possible problema canvi de filtre - Falten: 9 de 13 filtres
+10/11/2015 12:54:00-Resposta = 
+10/11/2015 12:54:00-resposta modem = AT+CMGS="+34686663429"
+> 
+10/11/2015 12:54:08-Error receiving OK-The operation has timed out.
+10/11/2015 12:54:08-& Error sending SMS
+10/11/2015 12:54:08-& Error sending SMS: Captador MCV - Possible problema canvi de filtre - Falten: 9 de 13 filtres
+10/11/2015 12:54:08-Comencem a enviar mail
+10/11/2015 12:54:08-Enviant mail a : satradar@mcvsa.com
+10/11/2015 12:54:15-Enviant SMS al tlf: 686663429
+10/11/2015 12:54:15-Comencem a enviar SMS amb el text: Captador MCV - Possible problema canvi de filtre - Falten: 9 de 13 filtres
+10/11/2015 12:54:15-Resposta = 
+10/11/2015 12:54:16-resposta modem = AT+CMGS="+34686663429"
+> 
+10/11/2015 12:54:17-Comencem a enviar mail
+10/11/2015 12:54:17-Enviant mail a : satradar@mcvsa.com
+10/11/2015 12:54:29-Error mail: Failure sending mail.-Missatge: Possible problema canvi de filtre - Falten: 9 de 13 filtres-Receptors: satradar@mcvsa.com
+10/11/2015 12:54:38-Error mail: Failure sending mail.-Missatge: Possible problema canvi de filtre - Falten: 9 de 13 filtres-Receptors: satradar@mcvsa.com
+10/11/2015 12:55:34-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/11/10,12:54:56+04"  Port Vell PM2.5     13/10/15 00:06Filtro #04/13Filtro finaliz.OK
+10/11/2015 12:55:34-txt.Phone = 686663429
+10/11/2015 12:55:34-txt.Name = Port Vell PM2.5
+10/11/2015 12:55:34-txt.DataHora = 13/10/2015 0:06:00
+10/11/2015 12:55:34-Enviant SMS al tlf: 686663429
+10/11/2015 12:55:34-Comencem a enviar SMS amb el text:   Port Vell PM2.5     13/10/15 00:06Filtro #04/13Filtro finaliz.Data recep. missatge: 10/11/2015 12:55:34
+10/11/2015 12:55:34-Resposta = 
+10/11/2015 12:55:34-Comencem a enviar mail
+10/11/2015 12:55:34-Enviant mail a : satradar@mcvsa.com
+10/11/2015 12:55:34-resposta modem = AT+CMGS="+34686663429"
+> 
+10/11/2015 12:55:36-Res SMS = OK
+10/11/2015 12:55:36-AT+CMGL="REC UNREAD"OK
+10/11/2015 12:55:55-Error mail: Failure sending mail.-Missatge:   Port Vell PM2.5     13/10/15 00:06Filtro #04/13Filtro finaliz.Data recep. missatge: 10/11/2015 12:55:34-Receptors: satradar@mcvsa.com
+10/11/2015 12:57:38-Enviant SMS al tlf: 686663429
+10/11/2015 12:57:38-Comencem a enviar SMS amb el text: Captador MCV - Possible problema canvi de filtre - Falten: 9 de 13 filtres
+10/11/2015 12:57:38-Resposta = 
+10/11/2015 12:57:38-resposta modem = AT+CMGS="+34686663429"
+> 
+10/11/2015 12:57:39-Comencem a enviar mail
+10/11/2015 12:57:39-Enviant mail a : satradar@mcvsa.com
+10/11/2015 12:58:00-Error mail: Failure sending mail.-Missatge: Possible problema canvi de filtre - Falten: 9 de 13 filtres-Receptors: satradar@mcvsa.com
+10/11/2015 13:02:16-Obrint port
+10/11/2015 13:02:22-Enviant SMS al tlf: 686663429
+10/11/2015 13:02:22-Comencem a enviar SMS amb el text: Captador MCV - Possible problema canvi de filtre - Falten: 9 de 13 filtres
+10/11/2015 13:02:22-Resposta = 
+10/11/2015 13:02:22-resposta modem = AT+CMGS="+34686663429"
+> 
+10/11/2015 13:02:24-Comencem a enviar mail
+10/11/2015 13:02:24-Enviant mail a : satradar@mcvsa.com
+10/11/2015 13:02:45-Error mail: Failure sending mail.-Missatge: Possible problema canvi de filtre - Falten: 9 de 13 filtres-Receptors: satradar@mcvsa.com
+10/11/2015 13:06:29-Obrint port
+10/11/2015 13:09:50-Enviant SMS al tlf: 686663429
+10/11/2015 13:09:50-Comencem a enviar SMS amb el text: Captador MCV - Possible problema canvi de filtre - Falten: 9 de 13 filtres
+10/11/2015 13:09:50-Resposta = 
+10/11/2015 13:09:50-resposta modem = AT+CMGS="+34686663429"
+> 
+10/11/2015 13:09:52-Comencem a enviar mail
+10/11/2015 13:09:52-Enviant mail a : satradar@mcvsa.com
+10/11/2015 13:10:13-Error mail: Failure sending mail.-Missatge: Possible problema canvi de filtre - Falten: 9 de 13 filtres-Receptors: satradar@mcvsa.com
+10/11/2015 13:12:48-Obrint port
+10/11/2015 13:12:55-Enviant SMS al tlf: 686663429
+10/11/2015 13:12:55-Comencem a enviar SMS amb el text: Captador MCV - Possible problema canvi de filtre - Falten: 9 de 13 filtres
+10/11/2015 13:12:55-Resposta = 
+10/11/2015 13:12:55-resposta modem = AT+CMGS="+34686663429"
+> 
+10/11/2015 13:12:56-Comencem a enviar mail
+10/11/2015 13:12:56-Enviant mail a : satradar@mcvsa.com
+10/11/2015 13:13:17-Error mail: Failure sending mail.-Missatge: Possible problema canvi de filtre - Falten: 9 de 13 filtres-Receptors: satradar@mcvsa.com
+10/11/2015 13:13:21-Obrint port
+10/11/2015 13:13:44-Response: AT+CMGL="ALL"+CMGL: 0,"REC UNREAD","+34686663429",,"15/11/10,13:13:04+04"  Port Vell PM2.5     13/10/15 00:06Filtro #04/13Filtro finaliz.OK
+10/11/2015 13:13:44-txt.Phone = 686663429
+10/11/2015 13:13:44-txt.Name = Port Vell PM2.5
+10/11/2015 13:13:44-txt.DataHora = 13/10/2015 0:06:00
+10/11/2015 13:13:44-Enviant SMS al tlf: 686663429
+10/11/2015 13:13:44-Comencem a enviar SMS amb el text:   Port Vell PM2.5     13/10/15 00:06Filtro #04/13Filtro finaliz.Data recep. missatge: 10/11/2015 13:13:44
+10/11/2015 13:13:44-Resposta = 
+10/11/2015 13:13:44-resposta modem = AT+CMGS="+34686663429"
+> 
+10/11/2015 13:13:44-Comencem a enviar mail
+10/11/2015 13:13:44-Enviant mail a : satradar@mcvsa.com
+10/11/2015 13:13:45-Res SMS = OK
+10/11/2015 13:13:45-AT+CMGL="REC UNREAD"OK
+10/11/2015 13:14:05-Error mail: Failure sending mail.-Missatge:   Port Vell PM2.5     13/10/15 00:06Filtro #04/13Filtro finaliz.Data recep. missatge: 10/11/2015 13:13:44-Receptors: satradar@mcvsa.com
+10/11/2015 13:15:48-Enviant SMS al tlf: 686663429
+10/11/2015 13:15:48-Comencem a enviar SMS amb el text: Captador MCV - Possible problema canvi de filtre - Falten: 9 de 13 filtres
+10/11/2015 13:15:48-Resposta = 
+10/11/2015 13:15:48-resposta modem = AT+CMGS="+34686663429"
+> 
+10/11/2015 13:15:49-Comencem a enviar mail
+10/11/2015 13:15:49-Enviant mail a : satradar@mcvsa.com
+10/11/2015 13:16:10-Error mail: Failure sending mail.-Missatge: Possible problema canvi de filtre - Falten: 9 de 13 filtres-Receptors: satradar@mcvsa.com
+10/11/2015 13:16:13-Obrint port

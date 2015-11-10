@@ -8,3 +8,17 @@ bin/Degug/resources/*.*
 bin/Debug/data/*.*
 bin/Debug/resources/historic
 bin/Debug/resources/log.txt
+bin/Debug/data/Captadorjjj
+.gitignore
+bin/Debug/data/BEST PM10
+bin/Debug/data/Captador MCV
+bin/Debug/data/CORREUS PST
+bin/Debug/data/DARSENA SUD PM10
+bin/Debug/data/PORT VELL PM10
+bin/Debug/data/ZAL BCN PM10
+bin/Debug/data/ZAL PRAT PM10
+bin/Debug/resources/log.txt
+bin/Debug/resources/settings.json
+.gitignore
+bin/Debug/resources/log.txt
+bin/Debug/resources/settings.json

@@ -237,8 +237,9 @@ Partial Class CCC
         '
         'LVLastMessages
         '
-        Me.LVLastMessages.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.LVLastMessages.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.LVLastMessages.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LVLastMessages.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None
         Me.LVLastMessages.Location = New System.Drawing.Point(6, 17)
@@ -285,8 +286,9 @@ Partial Class CCC
         '
         'GBoxLVLastMessages
         '
-        Me.GBoxLVLastMessages.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.GBoxLVLastMessages.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GBoxLVLastMessages.Controls.Add(Me.LVLastMessages)
         Me.GBoxLVLastMessages.Location = New System.Drawing.Point(8, 271)
         Me.GBoxLVLastMessages.Name = "GBoxLVLastMessages"
