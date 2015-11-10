@@ -233,7 +233,7 @@ Public Class CCC
                         DataGridView.Item(1, rowindex).Style.BackColor = Color.Red
                     Case Captador.FIN_CICLO
                         DataGridView.Item(1, rowindex).Style.BackColor = Color.Yellow
-                    Case Captador.WARNING
+                    Case Captador.ESCOMBRETES
                         DataGridView.Item(1, rowindex).Style.BackColor = Color.Yellow
                     Case Captador.RED_OK
                         DataGridView.Item(1, rowindex).Style.BackColor = Color.GreenYellow
@@ -243,6 +243,8 @@ Public Class CCC
                         DataGridView.Item(1, rowindex).Style.BackColor = Color.GreenYellow
                     Case Captador.MENSAJE_TEST
                         DataGridView.Item(1, rowindex).Style.BackColor = DataGridView.Item(1, rowindex).Style.BackColor
+                    Case Captador.DELAY_WARNING
+                        DataGridView.Item(1, rowindex).Style.BackColor = Color.Yellow
                     Case Else
                         DataGridView.Item(1, rowindex).Style.BackColor = Color.White
                 End Select
@@ -1008,6 +1010,16 @@ Public Class CCC
                         text.Name = captador.Nom
                         text.AllMessage = DELAY_MESSAGE & " - " & "Falten: " & captador.filtersLeft & " de " & captador.totalFilters & " filtres"
 
+                        'Actualitzem l'històric d'aquest captador amb el missatge
+                        json.devices(i).addData(text.AllMessage)
+                        'Si el captador està seleccionat mostrarem l'historial actualitzat
+                        'If DataGridView.CurrentRow.Index <> Nothing Then
+                        If DataGridView.SelectedRows.Count > 0 Then
+                            If DataGridView.CurrentRow.Index = i Then
+                                MostraHistorial(json.devices(i).Nom)
+                            End If
+                        End If
+
                         'Enviem els SMS pertinents:
                         For Each userID In captador.UsersList
                             phone = JsonFile.getPhone(userID)
@@ -1033,6 +1045,7 @@ Public Class CCC
                 End If
             End If
             updateDataGridView(captador)
+
             i += 1
         Next
     End Sub
@@ -1224,11 +1237,12 @@ Public Class Captador
     Public Const ALARMA As String = "ALARMA"
     Public Const ALARMA_RED As String = "ALARMA XARXA"
     Public Const RED_OK As String = "XARXA OK"
-    Public Const WARNING As String = "WARNING!"
+    Public Const ESCOMBRETES As String = "ESCOMBRETES MOTOR"
     Public Const FIN_CICLO As String = "CICLE FINALITZAT"
     Public Const UNKNOWN_MESSAGE As String = "MISSATGE NO RECONEGUT"
     Public Const FIN_FILTRO As String = "OK FI DE FILTRE"
     Public Const MENSAJE_TEST As String = "MISSATGE DE TEST"
+    Public Const DELAY_WARNING = "WARNING"
     Public Const NO_MESSAGE As String = "-"
 
     Public Const ALLOWED_DELAY As Integer = 15 'Retràs permés d'un filtre en minuts
@@ -1280,13 +1294,15 @@ Public Class Captador
         ElseIf LastMessage.IndexOf("RED OK") >= 0 Then
             LastState = RED_OK
         ElseIf LastMessage.IndexOf("Escobillas") >= 0 Then
-            LastState = WARNING
+            LastState = ESCOMBRETES
         ElseIf LastMessage.IndexOf("Ciclo finalizado") >= 0 Then
             LastState = FIN_CICLO
         ElseIf LastMessage.IndexOf("Filtro finaliz") >= 0 Then
             LastState = FIN_FILTRO
         ElseIf LastMessage.IndexOf("test") >= 0 Then
             LastState = lastKnownState
+        ElseIf LastMessage.IndexOf("Possible problema") >= 0 Then
+            LastState = DELAY_WARNING
         ElseIf LastMessage = "" Then
             LastState = NO_MESSAGE
         Else
@@ -1333,12 +1349,12 @@ Public Class Captador
         If (filterDuration) > 0 And ReceptionDate <> "" Then
             'Primer es calcula la diferència entre la data actual i la data d'inici de cicle
             Dim diffMinutes As Long = DateDiff(DateInterval.Minute, CDate(ReceptionDate), DateTime.Now)
-            'Debug:
-            'Dim diffHours As Long = DateDiff(DateInterval.Minute, CDate(ReceptionDate), DateTime.Now)
             'Segon es compara amb el delay permès
             'Treballarem en minuts perquè si no, la part entera de la funció "DateDiff" farà que no funcioni bé
 
-            If Math.Abs(diffMinutes) > (filterDuration * 60) + ALLOWED_DELAY Then
+            'Debug
+            'If Math.Abs(diffMinutes) > (filterDuration) Then
+            If Math.Abs(diffMinutes) > (filterDuration) * 60 + ALLOWED_DELAY Then
                 Return False
             Else
                 Return True
@@ -1581,6 +1597,7 @@ Public Class JsonFile
     Public Shared Sub setActive(ByVal active As Boolean, ByVal index As Integer)
         'Setegem si el captador és o no actiu
         CCC.json.devices(index).Actiu = active
+        IOTextFiles.updateJsonFile(CCC.json)
 
     End Sub
 End Class
